@@ -20,9 +20,9 @@ Name elements using only classes.
 
 Use .js-[name] or #js-[name] for hooking into JavaScript/jQuery
 
-Do not nest selectors more than 3 levels deep. Will want the output to be efficent.
+Do not nest selectors more than 3 levels deep. Will want the output to be efficient.
 
-Remove any rules that are not needed and cleanes before production
+Remove any rules that are not needed and cleanse before production
 
 ## Padding / Margins
 
@@ -34,14 +34,14 @@ Based on multiples of 15px
   - Responsive Accessible Navigation
   - Image Sliders (bxslider)
   - Sticky Nav
-  - Accordian
+  - Accordion
   - Placeholder Text
   - Matchmedia
   - Enquire
 
-Call jquery first from Google if this fails call locally
+Call jQuery first from Google if this fails call locally
 
-HTML template based loosly on HTML5 Boilderplate
+HTML template based loosely on HTML5 Boilderplate
 
 ## Accordions
 ## Clearfix
