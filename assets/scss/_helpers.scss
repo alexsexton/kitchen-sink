@@ -1,0 +1,14 @@
+// Percentage Function
+// Use like this
+// div {width: pc(500,1280);}
+
+@function pc($wanted, $parent) {
+  @return #{($wanted / $parent) * 100 + '%'};
+}
+
+// Paths
+$imagePath: "images";
+$fontPath: "fonts";
+
+// Media Querries
+

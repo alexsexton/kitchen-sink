@@ -1,0 +1,86 @@
+// Grid based on 30px margins between blocks at desktop 3.125%
+// Based on a max width 960px
+// The float of each grid component should be specified on the element by giving it a semantic name e.g .aside {float:left} .main {float:right} along with other rules specific to that elements
+// The grid classes below are only intentend as reusable classes for all sites
+
+.grid {
+  margin: 0 0 3.125% 0;
+}
+
+.grid div {
+  background: #ccc;
+  padding: 60px 0;
+}
+
+.full {
+  width: 100%;
+}
+
+// 465
+.column-half {
+  width: 48.484848484848%;
+  float: left;
+}
+
+.column-half:last-of-type {
+  float: right;
+}
+
+// 300
+.column-third {
+  float: left;
+  width: 31.25%;
+  margin: 0 3.125% 0 0;
+}
+
+.column-third:last-of-type {
+  margin: 0;
+}
+
+.column-two-thirds {
+  width: 65.625%;
+  float: right;
+}
+
+// 217.5
+.column-quarter {
+  width: 22.65625%;
+  float: left;
+  margin: 0 3.125% 0 0;
+}
+
+.column-quarter:last-of-type {
+  margin: 0;
+}
+
+// 712.5
+.column-three-quaters { 
+  width: 74.21875%;
+  float: right;
+}
+
+// 168
+.column-fifth { 
+  width: 17.5%;
+  float: left;
+  margin: 0 3.125% 0 0;
+}
+
+.column-fifth:last-of-type {
+  margin: 0;
+}
+
+.column-two-fiths {
+  width: 38.125%;
+  float: left;
+}
+
+.column-three-fiths {
+  width: 58.75%;
+  float: right;
+}
+
+.column-four-fiths {
+  width: 79.375%;
+  float: right;
+}
