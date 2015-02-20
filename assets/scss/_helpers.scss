@@ -10,5 +10,51 @@
 $imagePath: "images";
 $fontPath: "fonts";
 
-// Media Querries
+// Grid Mixins
 
+$col-margin: "3.125%";
+
+@mixin column-half ($float) {
+  width: 48.484848484848%;
+  float: $float;
+}
+
+@mixin column-third ($float) {
+ width: 31.25%;
+ float: $float;
+}
+
+@mixin column-two-thirds ($float) {
+  width: 65.625%;
+  float: $float;
+}
+
+@mixin column-quarter ($float) {
+  width: 22.65625%;
+  float: $float;
+}
+
+@mixin column-three-quaters ($float) { 
+  width: 74.21875%;
+  float: $float;
+}
+
+@mixin column-fifth ($float) {
+  width: 17.5%;
+  float: $float;
+}
+
+@mixin column-two-fiths ($float) {
+  width: 38.125%;
+  float: $float;
+}
+
+@mixin column-three-fiths ($float) {
+  width: 58.75%;
+  float: $float;
+}
+
+@mixin column-four-fiths ($float) {
+  width: 79.375%;
+  float: $float;
+}

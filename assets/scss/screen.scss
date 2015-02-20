@@ -4,6 +4,8 @@
 @import "helpers";
 @import "variables";
 @import "typography";
+@import "icons";
+@import "animations";
 @import "global";
 @import "tables";
 @import "grid";
@@ -12,3 +14,10 @@
 @import "nav";
 @import "components";
 @import "footer";
+// This is for the main site specific styles
+@import "site"; 
+// Media querries
+@import "large";
+@import "medium";
+@import "small";
+@import "ie";

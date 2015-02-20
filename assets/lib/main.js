@@ -34,7 +34,7 @@ $(function(){
 
 $(document).ready(function(){
     // Fitvids
-    $(".video").fitVids();
+    $(".video-frame").fitVids();
 
     // Navigation
     $("#js-main-navition").accessibleMegaMenu({
