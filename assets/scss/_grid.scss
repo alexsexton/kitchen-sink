@@ -1,86 +1,48 @@
-// Grid based on 30px margins between blocks at desktop 3.125%
-// Based on a max width 960px
-// The float of each grid component should be specified on the element by giving it a semantic name e.g .aside {float:left} .main {float:right} along with other rules specific to that elements
-// The grid classes below are only intentend as reusable classes for all sites
+// Grid Mixins
 
-.grid {
-  margin: 0 0 3.125% 0;
-}
+$col-margin: "3.125%";
 
-.grid div {
-  background: #ccc;
-  padding: 60px 0;
-}
-
-.full {
-  width: 100%;
-}
-
-// 465
-.column-half {
+@mixin column-half ($float) {
   width: 48.484848484848%;
-  float: left;
+  float: $float;
 }
 
-.column-half:last-of-type {
-  float: right;
+@mixin column-third ($float) {
+ width: 31.25%;
+ float: $float;
 }
 
-// 300
-.column-third {
-  float: left;
-  width: 31.25%;
-  margin: 0 3.125% 0 0;
-}
-
-.column-third:last-of-type {
-  margin: 0;
-}
-
-.column-two-thirds {
+@mixin column-two-thirds ($float) {
   width: 65.625%;
-  float: right;
+  float: $float;
 }
 
-// 217.5
-.column-quarter {
+@mixin column-quarter ($float) {
   width: 22.65625%;
-  float: left;
-  margin: 0 3.125% 0 0;
+  float: $float;
 }
 
-.column-quarter:last-of-type {
-  margin: 0;
-}
-
-// 712.5
-.column-three-quaters { 
+@mixin column-three-quarters ($float) { 
   width: 74.21875%;
-  float: right;
+  float: $float;
 }
 
-// 168
-.column-fifth { 
+@mixin column-fifth ($float) {
   width: 17.5%;
-  float: left;
-  margin: 0 3.125% 0 0;
+  float: $float;
 }
 
-.column-fifth:last-of-type {
-  margin: 0;
-}
-
-.column-two-fiths {
+@mixin column-two-fifths ($float) {
   width: 38.125%;
-  float: left;
+  float: $float;
 }
 
-.column-three-fiths {
+@mixin column-three-fifths ($float) {
   width: 58.75%;
-  float: right;
+  float: $float;
 }
 
-.column-four-fiths {
+@mixin column-four-fifths ($float) {
   width: 79.375%;
-  float: right;
+  float: $float;
 }

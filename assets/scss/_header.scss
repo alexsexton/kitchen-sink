@@ -3,11 +3,13 @@
 
 .header {
   padding: 30px 0;
+  background: $light-grey;
 
   .logo {
     width: 150px;
     height: 150px;
-    float: left;
+    clear: both;
+    margin: auto;
 
     img {
     width: 100%;

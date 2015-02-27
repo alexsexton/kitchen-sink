@@ -12,7 +12,6 @@
 @import "forms";
 @import "header";
 @import "nav";
-@import "components";
 @import "footer";
 // This is for the main site specific styles
 @import "site"; 
@@ -20,4 +19,7 @@
 @import "large";
 @import "medium";
 @import "small";
+// For JS component dependencies
+@import "components";
+// Internet Explorer
 @import "ie";

@@ -58,11 +58,16 @@ Call jQuery first from Google, then if this fails call locally. Try to use ARIA 
 ## Hidden Text - with progressive disclosure
 ## Icons
 ## Image sliders
+
+## Modal Window
+  http://kylefox.ca/jquery-modal/examples/index.html
+  http://www.jacklmoore.com/colorbox/
+
 ## Responsive Accessible Drop-down Navigation
 ## Responsive Images
 ## Responsive Tables
+## Social Icons
 ## SVG Animation
 ## Tabs
 ## Tool Tips or Hint Text
 ## Video Polyfill
-## Social Icons

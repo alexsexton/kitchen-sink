@@ -15,12 +15,6 @@ $base-line-height: 1.618; // phi
   font-size: $sizeValue + rem;
 }
 
-// Headers
-
-header {
-  margin: 60px 0;
-}
-
 // Headings
 
 h1 {
@@ -66,6 +60,7 @@ h6 {
 .section-header {
   border-bottom:1px dotted scale-color($input-border, $lightness: 50%);
   border-top:1px dotted scale-color($input-border, $lightness: 50%);
+  margin: 30px 0;
 }
 
 .section-header h1 {
