@@ -2,13 +2,16 @@
 
 A lightweight and complete framework for projects.
 
+## To Do
+
+Partial out SCSS into folders (partials/common/components)
+Load in JS components
+
 ## Key Points
 
-Lean, standards compliant and accessible re-usable code and modules.
+Lean, standards compliant and accessible re-usable code and components.
 
 CSS classes with consistent and relevant naming conventions. 
-
-We'll use jQuery and only include components common to all projects.
 
 Should work down to IE7 - it'll hopefully degrade nicely.
 
@@ -36,7 +39,7 @@ Margins and padding based on multiples of 15px at 960px.
 
 Typography 19px @ 1:1.618 (base font size) 960px @ 1:1.618 (outer wrapper width)
 
-## JS Components
+## Components
 
   - Tabs
   - Responsive Accessible Navigation
@@ -47,27 +50,29 @@ Typography 19px @ 1:1.618 (base font size) 960px @ 1:1.618 (outer wrapper width)
   - Matchmedia
   - Enquire
 
-Call jQuery first from Google, then if this fails call locally. Try to use ARIA roles on JS components to increase accessibility.
+## JavaScript / jQuery 
 
-## Accordions
-## Clearfix / Group
-## Form Validation
-## Forms
-## Grid Equal Height
-## Grid Layouts
-## Hidden Text - with progressive disclosure
-## Icons
-## Image sliders
+Call jQuery first from Google, then if this fails call locally. Use ARIA roles on JS components to increase accessibility.
 
-## Modal Window
+### Accordions
+### Clearfix / Group
+### Form Validation
+### Forms
+### Grid Equal Height
+### Grid Layouts
+### Hidden Text - with progressive disclosure
+### Icons
+### Image sliders
+
+### Modal Window
   http://kylefox.ca/jquery-modal/examples/index.html
   http://www.jacklmoore.com/colorbox/
 
-## Responsive Accessible Drop-down Navigation
-## Responsive Images
-## Responsive Tables
-## Social Icons
-## SVG Animation
-## Tabs
-## Tool Tips or Hint Text
-## Video Polyfill
+### Responsive Accessible Drop-down Navigation
+### Responsive Images
+### Responsive Tables
+### Social Icons
+### SVG Animation
+### Tabs
+### Tool Tips or Hint Text
+### Video Polyfill
