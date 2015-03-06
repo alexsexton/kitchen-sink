@@ -1,3 +1,27 @@
+.hero {
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-caption {
+    position: absolute;
+    bottom:30px;
+    left: 30px;
+    background: $black;
+    padding: 15px;
+    color: $light-grey;
+    h2 {
+      margin: 0;
+    }
+    a {
+      color: $link-colour;
+    }
+  }
+}
+
+
 .triangle:before {
   @include arrow-up(30px,#000)
 }

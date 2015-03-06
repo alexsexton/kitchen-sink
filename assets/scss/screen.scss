@@ -13,13 +13,9 @@
 @import "header";
 @import "nav";
 @import "footer";
-// This is for the main site specific styles
 @import "site"; 
-// Media querries
 @import "large";
 @import "medium";
 @import "small";
-// For JS component dependencies
 @import "components";
-// Internet Explorer
 @import "ie";

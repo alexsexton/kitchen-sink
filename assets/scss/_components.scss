@@ -2,12 +2,11 @@
 
 .hero {
   position: relative;
- 
   img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
-
+  
   .hero-caption {
     position: absolute;
     bottom:30px;
@@ -15,17 +14,13 @@
     background: $black;
     padding: 15px;
     color: $light-grey;
-
     h2 {
       margin: 0;
     }
-
-      a {
-        color: $link-colour;
-      }
-
+    a {
+      color: $link-colour;
+    }
   }
-
 }
 
 // Tabs Module
