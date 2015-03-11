@@ -54,9 +54,14 @@ textarea:focus {
 }
 
 .button:hover {
+  background: $button-hover;
+}
+
+.button:active, .button:focus {
+  background: $button-hover;
   position: relative;
   top: 2px;
-  background: $button-hover;
+  outline: none;
 }
 
 .button[disabled="disabled"], .button:hover[disabled="disabled"] {

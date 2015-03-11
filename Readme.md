@@ -33,46 +33,38 @@ Do not nest selectors more than 3 levels deep. We want the output to be efficien
 
 Remove any rules that are not needed and cleanse before production
 
+### Clearfix / Group
+### Grid Layouts
+### Forms
+### Responsive Images
+### Icons
+
 ## Design Standards
 
 Margins and padding based on multiples of 15px at 960px. 
 
 Typography 19px @ 1:1.618 (base font size) 960px @ 1:1.618 (outer wrapper width)
 
-## Components
-
-  - Tabs
-  - Responsive Accessible Navigation
-  - Image Sliders (bxslider)
-  - Sticky Nav
-  - Accordion
-  - Placeholder Text
-  - Matchmedia
-  - Enquire
-
-## JavaScript / jQuery 
+## JavaScript / jQuery Components
 
 Call jQuery first from Google, then if this fails call locally. Use ARIA roles on JS components to increase accessibility.
 
 ### Accordions
-### Clearfix / Group
 ### Form Validation
-### Forms
 ### Grid Equal Height
-### Grid Layouts
 ### Hidden Text - with progressive disclosure
-### Icons
 ### Image sliders
 
 ### Modal Window
   http://kylefox.ca/jquery-modal/examples/index.html
   http://www.jacklmoore.com/colorbox/
-
 ### Responsive Accessible Drop-down Navigation
-### Responsive Images
+  https://github.com/adobe-accessibility/Accessible-Mega-Menu
+
 ### Responsive Tables
-### Social Icons
 ### SVG Animation
 ### Tabs
+  [roled my own]
 ### Tool Tips or Hint Text
 ### Video Polyfill
+  https://github.com/davatron5000/FitVids.js

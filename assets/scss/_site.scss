@@ -22,12 +22,12 @@
 }
 
 
-.triangle:before {
+.triangle-up:before {
   @include arrow-up(30px,#000)
 }
 
-.triangle:after {
-  @include arrow-up(30px,$highlight)
+.triangle-down:before {
+  @include arrow-down(30px,$highlight)
 }
 
 

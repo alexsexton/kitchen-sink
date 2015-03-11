@@ -291,9 +291,14 @@ textarea:focus {
 }
 
 .button:hover {
+  background: #912B88;
+}
+
+.button:active, .button:focus {
+  background: #912B88;
   position: relative;
   top: 2px;
-  background: #912B88;
+  outline: none;
 }
 
 .button[disabled="disabled"], .button:hover[disabled="disabled"] {
@@ -539,7 +544,7 @@ label.checkbox-group input[type=checkbox] {
   color: #005EA5;
 }
 
-.triangle:before {
+.triangle-up:before {
   content: "";
   width: 0;
   height: 0;
@@ -548,13 +553,13 @@ label.checkbox-group input[type=checkbox] {
   border-bottom: 30px solid #000;
 }
 
-.triangle:after {
+.triangle-down:before {
   content: "";
   width: 0;
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-bottom: 30px solid #FFBF47;
+  border-top: 30px solid #FFBF47;
 }
 
 .grid {
