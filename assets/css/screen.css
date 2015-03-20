@@ -641,33 +641,6 @@ label.checkbox-group input[type=checkbox] {
   float: right;
 }
 
- 
-.hero {
-  position: relative;
-}
- 
-.hero img {
-  width: 100%;
-  height: auto;
-}
- 
-.hero .hero-caption {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  background: #0B0C0C;
-  padding: 15px;
-  color: #F8F8F8;
-}
- 
-.hero .hero-caption h2 {
-  margin: 0;
-}
- 
-.hero .hero-caption a {
-  color: #005EA5;
-}
-
 .tabs {
   margin: 60px 0;
 }

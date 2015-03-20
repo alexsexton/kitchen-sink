@@ -22,14 +22,14 @@ Based loosely on HTML5 Boilderplate.
 
 Combines GDS things and my own things and probably some bourbon tings.
 Any element with a role= gets the same class name.
-Name elements using only classes and for fucks sake give things meaningful names. SMACSS is consided the prefered stucture for nameing things.
+Name elements using only classes and for fucks sake give things meaningful names. SMACSS is considered the preferred structure for naming things.
 Use .js-[name] or #js-[name] for hooking into JavaScript/jQuery.
 Do not nest selectors more than 3 levels deep. We want the output to be efficient.
 
 Included in this repo are:
 
 - Clearfix / Group
-- Grid Layout, based on a compound 2/3/4/5 grid
+- Grid Layout, based on a compound 2/3/4/5 grid or as I call it fractions.
 - Forms, mostly lifted from GDS style guide
 - Responsive Images
 - Icons
@@ -48,6 +48,9 @@ Call jQuery first from Google, then if this fails call locally. Try to use ARIA 
 ### Grid Equal Height
 ### Hidden Text - with progressive disclosure
 ### Image sliders
+Using BX slider because it has a destroy method which when combined with enquire.js could be a powerful ally
+  
+  - http://bxslider.com/
 
 ### Modal Window
   - http://kylefox.ca/jquery-modal/examples/index.html
