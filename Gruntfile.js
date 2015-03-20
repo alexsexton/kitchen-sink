@@ -17,7 +17,7 @@ module.exports = function(grunt) {
           style: "expanded"
         },
         files: {
-          "./assets/css/screen.css" : "./assets/scss/screen.scss"
+          "assets/css/screen.css" : "assets/scss/screen.scss"
         }
       }
     },
@@ -25,8 +25,8 @@ module.exports = function(grunt) {
     uglify: {
       js: {
         files: {
-        "./assets/js/main.min.js" : "./assets/lib/main.js",
-        "./assets/js/plugins.min.js" : "./assets/lib/plugins.js"
+        "assets/js/main.min.js" : "assets/lib/main.js",
+        "assets/js/plugins.min.js" : "assets/lib/plugins.js"
         }
       }
     },

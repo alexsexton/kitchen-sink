@@ -40,3 +40,8 @@ $(document).ready(function(){
     openClass: "open"
   });
 });
+
+// BX Slider
+$(document).ready(function(){
+  $(".slider").bxSlider();
+});

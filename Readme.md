@@ -48,7 +48,7 @@ Call jQuery first from Google, then if this fails call locally. Try to use ARIA 
 ### Grid Equal Height
 ### Hidden Text - with progressive disclosure
 ### Image sliders
-Using BX slider because it has a destroy method which when combined with enquire.js could be a powerful ally
+Using BX slider because it has a destroy method which when combined with enquire.js could very useful. 
   
   - http://bxslider.com/
 
