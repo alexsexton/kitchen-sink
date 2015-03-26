@@ -4,7 +4,7 @@
     width: 100%;
     height: auto;
   }
-  
+
   .hero-caption {
     position: absolute;
     bottom:30px;
@@ -81,12 +81,12 @@
 }
 
 // 712.5
-.column-three-quaters { 
+.column-three-quaters {
   @include column-three-quarters(right);
 }
 
 // 168
-.column-fifth { 
+.column-fifth {
   @include column-fifth(left);
   margin: 0 3.125% 0 0;
 }

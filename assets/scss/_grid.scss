@@ -1,6 +1,6 @@
 // Grid Mixins
 
-$col-margin: "3.125%";
+$col-margin: 3.125%;
 
 @mixin column-half ($float) {
   width: 48.484848484848%;
@@ -22,7 +22,7 @@ $col-margin: "3.125%";
   float: $float;
 }
 
-@mixin column-three-quarters ($float) { 
+@mixin column-three-quaters ($float) {
   width: 74.21875%;
   float: $float;
 }

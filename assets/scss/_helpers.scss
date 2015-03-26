@@ -30,7 +30,7 @@ $fontPath: "fonts";
 
 // Grid Mixins
 
-$col-margin: "3.125%";
+$col-margin: 3.125%;
 
 @mixin column-half ($float) {
   width: 48.484848484848%;
@@ -52,7 +52,7 @@ $col-margin: "3.125%";
   float: $float;
 }
 
-@mixin column-three-quaters ($float) { 
+@mixin column-three-quaters ($float) {
   width: 74.21875%;
   float: $float;
 }
@@ -62,17 +62,17 @@ $col-margin: "3.125%";
   float: $float;
 }
 
-@mixin column-two-fiths ($float) {
+@mixin column-two-fifths ($float) {
   width: 38.125%;
   float: $float;
 }
 
-@mixin column-three-fiths ($float) {
+@mixin column-three-fifths ($float) {
   width: 58.75%;
   float: $float;
 }
 
-@mixin column-four-fiths ($float) {
+@mixin column-four-fifths ($float) {
   width: 79.375%;
   float: $float;
 }
