@@ -22,10 +22,10 @@ Based loosely on HTML5 Boilderplate.
 ## CSS / SCSS
 
 Combines GDS things and my own things and probably some bourbon things.
-Any element with a role= gets the same class name.
+Any element with a `role` gets the same class name.
 Name elements using classes and for fucks sake give things meaningful names. SMACSS is considered the preferred structure for naming things.
-Use .js-[name] or #js-[name] for hooking into JavaScript/jQuery.
-Do not nest selectors more than 3 levels deep. We want the output to be efficient.
+Use `.js-[name]` or `#js-[name]` for hooking into JavaScript/jQuery.
+Don't nest selectors more than 3 levels deep, we want the output to be efficient.
 
 Included in this repo are:
 
