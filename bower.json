@@ -1,0 +1,13 @@
+{
+  "name": "KitchenSink",
+  "dependencies": {
+    "jquery": "~1.11.2",
+    "modernizr": "~2.8",
+    "jquery-colorbox": "~1.6.0",
+    "dw-bxslider-4": "~4.2.3",
+    "enquire": "~2.1.2",
+    "jquery-backstretch": "~2.0.4",
+    "fitvids": "~1.1.0",
+    "jquery-accessibleMegaMenu" : "https://github.com/adobe-accessibility/Accessible-Mega-Menu.git"
+  }
+}
