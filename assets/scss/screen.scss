@@ -1,17 +1,14 @@
 // Screen CSS
 
-@import "helpers";
 @import "settings/global";
-@import "reset";
-@import "typography";
-@import "icons";
-@import "animations";
-@import "global";
-@import "tables";
-@import "grid";
-@import "forms";
+@import "core/helpers";
+@import "core/grid";
+@import "core/reset";
+@import "core/typography";
+@import "core/forms";
+@import "components/icons";
+@import "core/nav";
 @import "header";
-@import "components/nav";
 @import "footer";
 @import "site";
 @import "components/slider";
@@ -20,3 +17,5 @@
 @import "medium";
 @import "small";
 @import "ie";
+@import "components/animations";
+@import "components/tables";

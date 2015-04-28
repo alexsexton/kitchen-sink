@@ -33,7 +33,7 @@ table {
     border-spacing: 0;
 }
 
-// This is ugly and not an efficent way of doing box-sizing
+// This is ugly and not an efficent way of doing box-sizing and needs changing
 * {
   -moz-box-sizing:border-box;
   -webkit-boxizing:border-box;
@@ -53,26 +53,4 @@ table {
 // For IE 6/7 only Include this rule to trigger hasLayout and contain floats.
 .group {
     *zoom: 1;
-}
-
-// Global
-
-html {
-  font-size: 62.5%; // Creates a baseline of 1em/rem = 10px;
-  background: $body-bg;
-
-}
-
-body {
-  // background: url("../images/baseline.png");
-  font-family: $base-sans;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  color: $base-font-colour;
-}
-
-.row {
-  max-width: 1020px;
-  margin: auto;
-  padding: 0 30px;
 }

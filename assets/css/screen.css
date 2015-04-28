@@ -34,6 +34,26 @@ table {
   border-spacing: 0;
 }
 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-boxizing: border-box;
+  box-sizing: border-box;
+}
+
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  *zoom: 1;
+}
+
 h1 {
   font-size: 49.742px;
   font-weight: 600;
@@ -179,66 +199,6 @@ a:active {
   margin-left: 0;
 }
 
-* {
-  -moz-box-sizing: border-box;
-  -webkit-boxizing: border-box;
-  box-sizing: border-box;
-}
-
-.group:before,
-.group:after {
-  content: " ";
-  display: table;
-}
-
-.group:after {
-  clear: both;
-}
-
-.group {
-  *zoom: 1;
-}
-
-html {
-  font-size: 62.5%;
-  background: #fff;
-}
-
-body {
-  font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
-  font-size: 19px;
-  line-height: 1.618;
-  color: #222;
-}
-
-.row {
-  max-width: 1020px;
-  margin: auto;
-  padding: 0 30px;
-}
-
-table {
-  width: 100%;
-}
-table caption {
-  caption-side: bottom;
-  text-align: left;
-  color: #595959;
-}
-table th, table td {
-  padding: 7.5px 0;
-}
-table thead {
-  text-align: left;
-}
-table thead th {
-  border-bottom: 2px solid #666;
-  font-weight: bold;
-}
-table tbody tr {
-  border-bottom: 1px solid #666;
-}
-
 input[type=text],
 input[type=search],
 input[type=email],
@@ -374,20 +334,6 @@ label.checkbox-group input[type=checkbox] {
   left: 15px;
 }
 
-.header {
-  padding: 30px 0;
-  background: #F8F8F8;
-}
-.header .logo {
-  width: 150px;
-  height: 150px;
-  clear: both;
-  margin: auto;
-}
-.header .logo img {
-  width: 100%;
-}
-
 .navigation {
   text-align: center;
   /* mega menu list */
@@ -516,10 +462,42 @@ label.checkbox-group input[type=checkbox] {
   }
 }
 /* end mq */
+.header {
+  padding: 30px 0;
+  background: #F8F8F8;
+}
+.header .logo {
+  width: 150px;
+  height: 150px;
+  clear: both;
+  margin: auto;
+}
+.header .logo img {
+  width: 100%;
+}
+
 .footer {
   background: #0B0C0C;
   padding: 60px 0;
   margin: 30px 0 0;
+}
+
+html {
+  font-size: 62.5%;
+  background: #fff;
+}
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
+  font-size: 19px;
+  line-height: 1.618;
+  color: #222;
+}
+
+.row {
+  max-width: 1020px;
+  margin: auto;
+  padding: 0 30px;
 }
 
 .hero {
@@ -641,17 +619,6 @@ label.checkbox-group input[type=checkbox] {
   float: right;
 }
 
-/**
- * BxSlider v4.1.2 - Fully loaded, responsive content slider
- * http://bxslider.com
- *
- * Written by: Steven Wanderski, 2014
- * http://stevenwanderski.com
- * (while drinking Belgian ales and listening to jazz)
- *
- * CEO and founder of bxCreative, LTD
- * http://bxcreative.com
- */
 /** RESET AND LAYOUT
 ===================================*/
 .bx-wrapper {
@@ -847,6 +814,28 @@ label.checkbox-group input[type=checkbox] {
 }
 .tabs ul li:first-child a {
   margin: 0 15px 0 0;
+}
+
+table {
+  width: 100%;
+}
+table caption {
+  caption-side: bottom;
+  text-align: left;
+  color: #595959;
+}
+table th, table td {
+  padding: 7.5px 0;
+}
+table thead {
+  text-align: left;
+}
+table thead th {
+  border-bottom: 2px solid #666;
+  font-weight: bold;
+}
+table tbody tr {
+  border-bottom: 1px solid #666;
 }
 
 /*# sourceMappingURL=screen.css.map */

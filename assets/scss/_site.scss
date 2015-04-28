@@ -1,3 +1,26 @@
+// Site
+
+html {
+  font-size: 62.5%; // Creates a baseline of 1em/rem = 10px;
+  background: $body-bg;
+
+}
+
+body {
+  // background: url("../images/baseline.png");
+  font-family: $base-sans;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-font-colour;
+}
+
+.row {
+  max-width: 1020px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+
 .hero {
   position: relative;
   img {
