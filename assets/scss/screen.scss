@@ -1,8 +1,8 @@
 // Screen CSS
 
-@import "reset";
 @import "helpers";
-@import "variables";
+@import "settings/global";
+@import "reset";
 @import "typography";
 @import "icons";
 @import "animations";
@@ -11,10 +11,11 @@
 @import "grid";
 @import "forms";
 @import "header";
-@import "nav";
+@import "components/nav";
 @import "footer";
-@import "site"; 
-@import "components";
+@import "site";
+@import "components/slider";
+@import "components/tabs";
 @import "large";
 @import "medium";
 @import "small";
