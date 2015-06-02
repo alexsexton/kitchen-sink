@@ -11,7 +11,7 @@ $(document).ready(function(){
     $(".tabs ul a").removeClass("selected").attr("aria-expanded","false");
     $(this).addClass("selected").attr("aria-expanded","true");
     return false;
-  }).filter(":first").click().attr("aria-expanded","true"); 
+  }).filter(":first").click().attr("aria-expanded","true");
 });
 
 // Add selected class and aria roles to checked input labels

@@ -15,7 +15,7 @@ body {
 }
 
 .row {
-  max-width: 1020px;
+  max-width: $site-max-width;
   margin: auto;
   padding: 0 30px;
 }

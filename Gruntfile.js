@@ -4,6 +4,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   grunt.registerTask("default", ["watch", "uglify"]);
 
@@ -25,10 +26,21 @@ module.exports = function(grunt) {
     uglify: {
       js: {
         files: {
-        "assets/js/main.min.js" : "assets/lib/main.js",
-        "assets/js/plugins.min.js" : "assets/lib/plugins.js"
+        "assets/js/main.min.js" : "assets/lib/js/main.js",
+        "assets/js/plugins.min.js" : "assets/lib/js/plugins.js"
         }
       }
+    },
+
+    imagemin: {
+      dist: {
+        files: [{
+            expand: true,
+            cwd: 'assets/lib/images',
+            src: ['**/*.{png,jpg,gif}'],
+            dest: 'assets/images',
+        }],
+      },
     },
 
     watch: {
