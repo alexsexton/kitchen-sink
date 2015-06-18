@@ -41,7 +41,7 @@ Typographic scale 19px @ 1:1.618 (base font size) 960px @ 1:1.618 (outer wrapper
 
 ## JS Components
 
-Call jQuery first from Google, then if this fails call locally. Try to use ARIA roles on JS components to increase accessibility. Either inject these with JS or code into document.
+Call jQuery first from Google, then if this fails call locally. Use ARIA roles on JS components to increase accessibility. Either inject these with JS or code into document.
 
 ### Accordions
 ### Form Validation

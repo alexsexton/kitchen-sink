@@ -1,0 +1,131 @@
+// Site
+
+html {
+  font-size: 62.5%; // Creates a baseline of 1em/rem = 10px;
+  background: $body-bg;
+
+}
+
+body {
+  // background: url("../images/baseline.png");
+  font-family: $base-sans;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $base-font-colour;
+}
+
+.row {
+  max-width: $site-max-width;
+  margin: auto;
+  padding: 0 30px;
+}
+
+
+.hero {
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-caption {
+    position: absolute;
+    bottom:30px;
+    left: 30px;
+    background: $black;
+    padding: 15px;
+    color: $light-grey;
+    h2 {
+      margin: 0;
+    }
+    a {
+      color: $link-colour;
+    }
+  }
+}
+
+
+.triangle-up:before {
+  @include arrow-up(30px,#000)
+}
+
+.triangle-down:before {
+  @include arrow-down(30px,$highlight)
+}
+
+
+// Grid
+
+.grid {
+  margin: 0 0 3.125% 0;
+}
+
+.grid div {
+  background: #ccc;
+  padding: 60px 0;
+}
+
+.full {
+  width: 100%;
+}
+
+// 465
+.column-half {
+  @include column-half(left);
+}
+
+.column-half:last-of-type {
+  @include column-half(right);
+}
+
+// 300
+.column-third {
+  @include column-third(left);
+  margin: 0 3.125% 0 0;
+}
+
+.column-third:last-of-type {
+  margin: 0;
+}
+
+.column-two-thirds {
+  @include column-two-thirds(right);
+  float: right;
+}
+
+// 217.5
+.column-quarter {
+  @include column-quarter(left);
+  margin: 0 3.125% 0 0;
+}
+
+.column-quarter:last-of-type {
+  margin: 0;
+}
+
+// 712.5
+.column-three-quaters {
+  @include column-three-quarters(right);
+}
+
+// 168
+.column-fifth {
+  @include column-fifth(left);
+  margin: 0 3.125% 0 0;
+}
+
+.column-fifth:last-of-type {
+  margin: 0;
+}
+
+.column-two-fiths {
+  @include column-two-fifths(left);
+}
+
+.column-three-fiths {
+  @include column-three-fifths(right);
+}
+
+.column-four-fiths {
+  @include column-four-fifths(right);
+}

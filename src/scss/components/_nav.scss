@@ -1,0 +1,154 @@
+.navigation {
+  text-align: center;
+
+  .nav-menu {
+    padding: 0;
+    position: relative;
+    text-align: left;
+  }
+
+  .nav-item > a { 
+    float: left;
+    font-size: 1.15em;
+    padding: 9px 9px 17px;
+  }
+
+  .sub-nav {
+    background: #ccc;
+  }
+
+  .sub-nav-group {
+    float: left;
+    padding: 20px 0 20px 20px;
+  }
+
+  .sub-nav ul li {
+    list-style: none outside none;
+    margin-bottom: 5px;
+    margin-left: 0;
+    padding-left: 12px;
+  }
+
+  .sub-nav a {
+    display: block;
+    font-size: 105%;
+    margin: 0 30px 3px 0;
+    min-width: 200px;
+    padding: 0 10px 3px 7px;
+    line-height: 21px;
+  }
+
+  a { 
+    text-decoration: none;
+  }
+
+  .nav-item > a:hover, 
+  .nav-item > a:focus, 
+  .nav-item > a.open  {  
+    background: transparent;
+  } 
+
+  .sub-nav a:hover, 
+  .sub-nav a:focus { 
+  }
+
+  /* mega menu list */
+  .nav-menu {
+    display: block;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 15;
+  }
+
+  /* a top level navigation item in the mega menu */
+  .nav-item {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* first descendant link within a top level navigation item */
+  .nav-item > a {
+    position: relative;
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0 0 -1px 0;
+    border: 1px solid transparent;
+  }
+
+  /* focus/open states of first descendant link within a top level 
+  navigation item */
+  .nav-item > a:focus,
+  .nav-item > a.open {
+  }
+
+  /* open state of first descendant link within a top level 
+  navigation item */
+  .nav-item > a.open {
+    border-bottom: none;
+    z-index: 1;
+  }
+
+  /* sub-navigation panel */
+  .sub-nav {
+    position: absolute;
+    display: none;
+    top: 2.6em;
+    margin-top: -1px;
+    padding: 0.5em 1em;
+  }
+
+  /* sub-navigation panel open state */
+  .sub-nav.open {
+    display: block;
+  }
+
+  /* list of items within sub-navigation panel */
+  .sub-nav ul {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1em 0 0;
+    padding: 0;
+  }
+
+  /* list item within sub-navigation panel */
+  .sub-nav li {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }     
+
+}
+
+@media screen and (max-width: 780px) {
+
+  .nav-item {
+    display: block;
+    width: 100%;
+  }
+
+  .navigation li.nav-item > a {
+    float: none;
+    display: block;
+  }
+
+  .navigation .sub-nav {
+    display: block;
+    position: static;  
+  }
+
+  .navigation .sub-nav-group {
+    float: none;
+    width: 100%;
+  }
+
+  .navigation .sub-nav a {
+    min-width: 100%;
+    display: block;
+  }
+
+} /* end mq */

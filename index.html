@@ -98,8 +98,9 @@
 
       <div class="search">
         <form role="search" action="/">
-          <input type="search" placeholder="Find">
-          <input type="submit" value="Find">
+          <label for="search">Find something</label>
+          <input type="search" name="search" id="search" placeholder="Enter some keywords">
+          <input type="submit" value="Find" class="button">
         </form>
       </div>
     </div>
@@ -379,6 +380,7 @@
 
       <header class="section-header">
         <h1>Forms</h1>
+        <!-- note that we're not using placeholder attributes since they aren't especially accessible -->
       </header>
 
       <form class="data-collection" action="">

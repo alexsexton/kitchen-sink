@@ -1,0 +1,31 @@
+// Tablular Data
+
+table {
+
+  width: 100%;
+
+  caption {
+    caption-side: bottom;
+    text-align: left;
+    color: scale-color($base-font-colour, $lightness: 25%);
+  }  
+
+  th, td {
+    padding: 7.5px 0;
+  }
+
+  thead {
+    text-align: left;
+    th {
+      border-bottom: 2px solid $table-borders;
+      font-weight: bold;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $table-borders;
+    }
+  }
+
+}

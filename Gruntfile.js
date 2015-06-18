@@ -1,12 +1,13 @@
 module.exports = function(grunt) {
 
   grunt.loadNpmTasks("grunt-contrib-sass");
-  grunt.loadNpmTasks("grunt-contrib-watch");
+  grunt.loadNpmTasks("grunt-contrib-concat");
   grunt.loadNpmTasks("grunt-contrib-uglify");
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks("grunt-contrib-imagemin");
+  grunt.loadNpmTasks("grunt-contrib-watch");
 
-  grunt.registerTask("default", ["watch", "uglify"]);
+
+  grunt.registerTask("default", ["watch", "uglify", "concat", "imagemin"]);
 
   grunt.initConfig({
 
@@ -15,19 +16,29 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          style: "expanded"
+          style: "expanded",
         },
         files: {
-          "assets/css/screen.css" : "assets/scss/screen.scss"
+          "assets/css/screen.css" : "src/scss/screen.scss"
         }
       }
     },
 
+    concat: {
+      dist: {
+        src: ["src/js/plugins/*.js"],
+        dest: "src/js/plugins.js",
+      },
+    },
+
     uglify: {
+      options: {
+        seperator: ";\n",
+      },
       js: {
         files: {
-        "assets/js/main.min.js" : "assets/lib/js/main.js",
-        "assets/js/plugins.min.js" : "assets/lib/js/plugins.js"
+        "assets/js/main.min.js" : "src/js/main.js",
+        "assets/js/plugins.min.js" : "src/js/plugins.js"
         }
       }
     },
@@ -36,9 +47,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
             expand: true,
-            cwd: 'assets/lib/images',
-            src: ['**/*.{png,jpg,gif}'],
-            dest: 'assets/images',
+            cwd: "src/images",
+            src: ["**/*.{png,jpg,gif}"],
+            dest: "assets/images",
         }],
       },
     },
@@ -49,8 +60,8 @@ module.exports = function(grunt) {
         tasks: ["sass"]
       },
       js: {
-        files: ["**/*.js"],
-        tasks: ["uglify"]
+        files: ["assets/**/*.js", "src/**/*.js"],
+        tasks: ["uglify", "concat"]
       }
     },
 

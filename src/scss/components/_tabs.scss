@@ -1,0 +1,23 @@
+// Tabs
+
+.tabs {
+    margin: 60px 0;
+}
+.tabs ul {
+    margin: 0 0 30px 0;
+    li {
+        display: inline-block;
+        &:first-child {
+          border-right: 2px solid $input-border;
+        }
+        a {
+            margin: 0 0 0 15px;
+        }
+        a.selected {
+            color: $black;
+        }
+        &:first-child a {
+            margin: 0 15px 0 0;
+        }
+    }
+}

@@ -156,21 +156,21 @@ hr:after {
 }
 
 a {
-  color: #005EA5;
+  color: #005ea5;
   text-decoration: none;
 }
 
 a:hover {
-  color: #2E8ACA;
+  color: #2e8aca;
 }
 
 a:visited {
-  color: #005EA5;
+  color: #005ea5;
 }
 
 a:active {
-  color: #0B0C0C;
-  background: #FFBF47;
+  color: #0b0c0c;
+  background: #ffbf47;
 }
 
 .post-image {
@@ -233,7 +233,7 @@ input[type=email]:focus,
 input[type=phone]:focus,
 input[type=password]:focus,
 textarea:focus {
-  border: 2px solid #FFBF47;
+  border: 2px solid #ffbf47;
 }
 
 .button {
@@ -243,26 +243,26 @@ textarea:focus {
   cursor: pointer;
   border: 0;
   padding: 15px 30px;
-  background: #2E358B;
+  background: #2e358b;
   font-size: 19px;
-  color: #F8F8F8;
+  color: #f8f8f8;
   transition: all 0.2s ease-in-out;
   margin: 0 30px 0 0;
 }
 
 .button:hover {
-  background: #912B88;
+  background: #912b88;
 }
 
 .button:active, .button:focus {
-  background: #912B88;
+  background: #912b88;
   position: relative;
   top: 2px;
   outline: none;
 }
 
 .button[disabled="disabled"], .button:hover[disabled="disabled"] {
-  background: #2E358B;
+  background: #2e358b;
   cursor: default;
   opacity: 0.5;
 }
@@ -299,7 +299,7 @@ textarea:focus {
 }
 
 .form-error input[type=text] {
-  border-color: #DF3034;
+  border-color: #df3034;
 }
 
 .form-error span {
@@ -335,49 +335,31 @@ label.checkbox-group input[type=checkbox] {
 }
 
 .navigation {
+  margin: 30px 0;
   text-align: center;
-  /* mega menu list */
-  /* a top level navigation item in the mega menu */
-  /* first descendant link within a top level navigation item */
-  /* focus/open states of first descendant link within a top level 
-  navigation item */
-  /* open state of first descendant link within a top level 
-  navigation item */
-  /* sub-navigation panel */
-  /* sub-navigation panel open state */
-  /* list of items within sub-navigation panel */
-  /* list item within sub-navigation panel */
 }
 .navigation .nav-menu {
-  padding: 0;
   position: relative;
   text-align: left;
 }
 .navigation .nav-item > a {
   float: left;
-  font-size: 1.15em;
-  padding: 9px 9px 17px;
+  padding: 15px 30px;
 }
 .navigation .sub-nav {
-  background: #ccc;
+  background: #c8c8c8;
 }
 .navigation .sub-nav-group {
   float: left;
-  padding: 20px 0 20px 20px;
+  padding: 30px;
 }
 .navigation .sub-nav ul li {
-  list-style: none outside none;
-  margin-bottom: 5px;
-  margin-left: 0;
-  padding-left: 12px;
+  padding: 0 0 0 15px;
 }
 .navigation .sub-nav a {
   display: block;
-  font-size: 105%;
-  margin: 0 30px 3px 0;
+  margin: 0 30px 0 0;
   min-width: 200px;
-  padding: 0 10px 3px 7px;
-  line-height: 21px;
 }
 .navigation a {
   text-decoration: none;
@@ -387,26 +369,24 @@ label.checkbox-group input[type=checkbox] {
 .navigation .nav-item > a.open {
   background: transparent;
 }
+.navigation .nav-item > a:focus {
+  outline: 2px solid #2e358b;
+}
+.navigation .sub-nav a:focus {
+  outline: 2px solid #2e358b;
+}
 .navigation .nav-menu {
   display: block;
   position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0;
   z-index: 15;
 }
 .navigation .nav-item {
-  list-style: none;
   display: inline-block;
-  padding: 0;
-  margin: 0;
 }
 .navigation .nav-item > a {
   position: relative;
   display: inline-block;
-  padding: 0.5em 1em;
-  margin: 0 0 -1px 0;
-  border: 1px solid transparent;
+  padding: 15px 30px;
 }
 .navigation .nav-item > a.open {
   border-bottom: none;
@@ -415,9 +395,8 @@ label.checkbox-group input[type=checkbox] {
 .navigation .sub-nav {
   position: absolute;
   display: none;
-  top: 2.6em;
-  margin-top: -1px;
-  padding: 0.5em 1em;
+  top: 60px;
+  padding: 15px 30px;
 }
 .navigation .sub-nav.open {
   display: block;
@@ -425,14 +404,11 @@ label.checkbox-group input[type=checkbox] {
 .navigation .sub-nav ul {
   display: inline-block;
   vertical-align: top;
-  margin: 0 1em 0 0;
+  margin: 0 30px 0 0;
   padding: 0;
 }
 .navigation .sub-nav li {
   display: block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 @media screen and (max-width: 780px) {
@@ -461,10 +437,9 @@ label.checkbox-group input[type=checkbox] {
     display: block;
   }
 }
-/* end mq */
 .header {
   padding: 30px 0;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 .header .logo {
   width: 150px;
@@ -477,7 +452,7 @@ label.checkbox-group input[type=checkbox] {
 }
 
 .footer {
-  background: #0B0C0C;
+  background: #0b0c0c;
   padding: 60px 0;
   margin: 30px 0 0;
 }
@@ -511,15 +486,15 @@ body {
   position: absolute;
   bottom: 30px;
   left: 30px;
-  background: #0B0C0C;
+  background: #0b0c0c;
   padding: 15px;
-  color: #F8F8F8;
+  color: #f8f8f8;
 }
 .hero .hero-caption h2 {
   margin: 0;
 }
 .hero .hero-caption a {
-  color: #005EA5;
+  color: #005ea5;
 }
 
 .triangle-up:before {
@@ -537,7 +512,7 @@ body {
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-top: 30px solid #FFBF47;
+  border-top: 30px solid #ffbf47;
 }
 
 .grid {
@@ -804,13 +779,13 @@ body {
   display: inline-block;
 }
 .tabs ul li:first-child {
-  border-right: 2px solid #6F777B;
+  border-right: 2px solid #6f777b;
 }
 .tabs ul li a {
   margin: 0 0 0 15px;
 }
 .tabs ul li a.selected {
-  color: #0B0C0C;
+  color: #0b0c0c;
 }
 .tabs ul li:first-child a {
   margin: 0 15px 0 0;
@@ -836,6 +811,13 @@ table thead th {
 }
 table tbody tr {
   border-bottom: 1px solid #666;
+}
+
+.blocks .block {
+  background: #f8f8f8;
+  border-bottom: 4px solid #c8c8c8;
+  padding: 30px;
+  margin: 0 0 30px 0;
 }
 
 /*# sourceMappingURL=screen.css.map */
