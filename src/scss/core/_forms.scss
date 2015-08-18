@@ -50,7 +50,7 @@ textarea:focus {
   font-size: $base-font-size;
   color: $light-grey;
   transition: all 0.2s ease-in-out;
-  margin: 0 30px 0 0;
+  margin: 0 0 30px 0;
 }
 
 .button:hover {
@@ -59,9 +59,6 @@ textarea:focus {
 
 .button:active, .button:focus {
   background: $button-hover;
-  position: relative;
-  top: 2px;
-  outline: none;
 }
 
 .button[disabled="disabled"], .button:hover[disabled="disabled"] {
@@ -104,7 +101,7 @@ textarea:focus {
 }
 
 .form-error input[type=text] {
-  border-color: $error; 
+  border-color: $error;
 }
 
 .form-error span {

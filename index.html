@@ -99,10 +99,11 @@
       <div class="search">
         <form role="search" action="/">
           <label for="search">Find something</label>
-          <input type="search" name="search" id="search" placeholder="Enter some keywords">
+          <input type="search" name="search" id="search" placeholder="enter some keywords">
           <input type="submit" value="Find" class="button">
         </form>
       </div>
+
     </div>
   </header>
 
@@ -167,11 +168,39 @@
         <div class="thing block">
           <h3>Apple Pie</h3>
           <p>The temperature inside this apple pie is over one thousand degrees.</p>
+          <button class="button cta">Action</button>
         </div>
         <div class="something block">
           <h3>Beans</h3>
           <p>I like to keep a bit more distance between the egg and the beans.</p>
+          <button class="button cta">Action</button>
         </div>
+      </section>
+
+      <section class="content-and-sidebar group">
+
+        <header class="section-header">
+          <h1>Content and Sidebar</h1>
+        </header>
+
+        <article class="main-content rich-text">
+          <h2>Elephant Man</h2>
+          <p>I know lying is wrong, but if the elephant man came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he's depressed and has respiratory problems — would you say "go and take that blusher off you mis-shapen headed elephant tranny"? No. You'd say "You look nice...John"</p>
+          <h3>Minor criticism</h3>
+          <p>Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that's my decision. Use the sausage as a breakwater...but that's nitpicking, on the whole a very good effort...Seven on ten. Let's make love.</p>
+        </article>
+
+        <aside class="sidebar" role="complementary">
+          <h3>Sidebar</h3>
+          <p></p>
+          <ul>
+            <li><a href="#">Complementary Link 1</a></li>
+            <li><a href="#">Complementary Link 2</a></li>
+            <li><a href="#">Complementary Link 3</a></li>
+            <li><a href="#">Complementary Link 4</a></li>
+          </ul>
+        </aside>
+
       </section>
 
       <section class="tabs">
@@ -181,18 +210,17 @@
         </header>
 
         <ul>
-          <li><a href="#tab-one" aria-controls="tab-one">Tab One</a></li>
-          <li><a href="#tab-two" aria-controls="tab-two">Tab Two</a></li>
+          <li><a href="#tab-one" aria-controls="tab-one" aria-expanded="true">Tab One</a></li>
+          <li><a href="#tab-two" aria-controls="tab-two" aria-expanded="false">Tab Two</a></li>
         </ul>
 
-        <div class="tab" id="tab-one">
+        <div class="tab" id="tab-one" aria-hidden="false">
           <p>We managed to rectify it, though, because it now says, by adapting it, "Cook" where it once said "Cock", and it says "Pass" now where it once said "Piss", so it’s slightly less rude.</p>
         </div>
 
-        <div class="tab" id="tab-two">
+        <div class="tab" id="tab-two" aria-hidden="true">
           <p>Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that's my decision. Use the sausage as a breakwater...but that's nitpicking, on the whole a very good effort...Seven on ten. Let's make love.</p>
         </div>
-
 
       </section>
 
@@ -266,13 +294,13 @@
         <h2>Vimeo</h2>
 
         <div class="video-frame">
-          <iframe src="//player.vimeo.com/video/117513135" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="https://player.vimeo.com/video/123716203" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
 
         <h2>YouTube</h2>
 
         <div class"video-frame">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/zUNrUqMwUkY" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/zUNrUqMwUkY" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
 
       </section>
@@ -309,7 +337,7 @@
             <td>Self-raising Flour</td><td>200g</td><td>400g</td>
           </tr>
           <tr>
-            <td>Baking Powder</td><td>1 tsp</td><td>2 tsp</td>
+            <td>Baking Powder</td><td>1 <abbr title="Tea Spoon">tsp</abbr></td><td>2 tsp</td>
           </tr>
           <tr>
             <td>Milk</td><td>2 tbsp</td><td>4 tbsp</td>
@@ -493,9 +521,9 @@
         </div>
 
         <div class="form-buttons">
-          <input type="submit" value="Submit" class="button">
+          <input type="submit" value="Submit" class="button button-submit">
           <input type="reset" value="Reset" class="button button-reset">
-          <input type="button" value="Button" class="button" disabled="disabled">
+          <input type="button" value="Button (Disabled)" class="button button-disabled" disabled="disabled">
           <button class="button">Button</button>
         </div>
       </form>

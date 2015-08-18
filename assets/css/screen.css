@@ -247,7 +247,7 @@ textarea:focus {
   font-size: 19px;
   color: #f8f8f8;
   transition: all 0.2s ease-in-out;
-  margin: 0 30px 0 0;
+  margin: 0 0 30px 0;
 }
 
 .button:hover {
@@ -256,9 +256,6 @@ textarea:focus {
 
 .button:active, .button:focus {
   background: #912b88;
-  position: relative;
-  top: 2px;
-  outline: none;
 }
 
 .button[disabled="disabled"], .button:hover[disabled="disabled"] {
@@ -367,7 +364,7 @@ label.checkbox-group input[type=checkbox] {
 .navigation .nav-item > a:hover,
 .navigation .nav-item > a:focus,
 .navigation .nav-item > a.open {
-  background: transparent;
+  background: #c8c8c8;
 }
 .navigation .nav-item > a:focus {
   outline: 2px solid #2e358b;
@@ -449,6 +446,9 @@ label.checkbox-group input[type=checkbox] {
 }
 .header .logo img {
   width: 100%;
+}
+.header .search .button {
+  padding: 7px 30px;
 }
 
 .footer {
@@ -594,16 +594,29 @@ body {
   float: right;
 }
 
+.main-content {
+  width: 65.625%;
+  float: left;
+}
+
+.sidebar {
+  width: 31.25%;
+  float: right;
+}
+.sidebar ul {
+  border-left: 4px solid #2e358b;
+  padding: 0 0 0 30px;
+}
+
 /** RESET AND LAYOUT
 ===================================*/
 .bx-wrapper {
   position: relative;
   margin: 0 auto 60px;
-  padding: 0;
   *zoom: 1;
 }
 
-.bx-wrapper img {
+img {
   max-width: 100%;
   display: block;
 }
@@ -641,7 +654,7 @@ body {
 /* PAGER */
 .bx-wrapper .bx-pager {
   text-align: center;
-  color: #666;
+  color: #2e358b;
   padding-top: 20px;
 }
 
@@ -653,16 +666,16 @@ body {
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
+  background: #2e358b;
   text-indent: -9999px;
   display: block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
+  width: 16px;
+  height: 16px;
+  margin: 0 8px;
   outline: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
@@ -673,12 +686,12 @@ body {
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
   left: 10px;
-  background: url(images/controls.png) no-repeat 0 -32px;
+  background: #000;
 }
 
 .bx-wrapper .bx-next {
   right: 10px;
-  background: url(images/controls.png) no-repeat -43px -32px;
+  background: #000;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -704,41 +717,6 @@ body {
   display: none;
 }
 
-/* AUTO CONTROLS (START / STOP) */
-.bx-wrapper .bx-controls-auto {
-  text-align: center;
-}
-
-.bx-wrapper .bx-controls-auto .bx-start {
-  display: block;
-  text-indent: -9999px;
-  width: 10px;
-  height: 11px;
-  outline: 0;
-  background: url(images/controls.png) -86px -11px no-repeat;
-  margin: 0 3px;
-}
-
-.bx-wrapper .bx-controls-auto .bx-start:hover,
-.bx-wrapper .bx-controls-auto .bx-start.active {
-  background-position: -86px 0;
-}
-
-.bx-wrapper .bx-controls-auto .bx-stop {
-  display: block;
-  text-indent: -9999px;
-  width: 9px;
-  height: 11px;
-  outline: 0;
-  background: url(images/controls.png) -86px -44px no-repeat;
-  margin: 0 3px;
-}
-
-.bx-wrapper .bx-controls-auto .bx-stop:hover,
-.bx-wrapper .bx-controls-auto .bx-stop.active {
-  background-position: -86px -33px;
-}
-
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
   text-align: left;
@@ -755,16 +733,14 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #666 \9;
+  background: #666;
   background: rgba(80, 80, 80, 0.75);
   width: 100%;
 }
 
 .bx-wrapper .bx-caption span {
   color: #fff;
-  font-family: Arial;
   display: block;
-  font-size: .85em;
   padding: 10px;
 }
 
@@ -818,6 +794,9 @@ table tbody tr {
   border-bottom: 4px solid #c8c8c8;
   padding: 30px;
   margin: 0 0 30px 0;
+}
+.blocks .block .cta {
+  margin: 15px 0;
 }
 
 /*# sourceMappingURL=screen.css.map */

@@ -1,0 +1,14 @@
+
+.main-content {
+  @include column-two-thirds(left);
+}
+
+
+.sidebar {
+  @include column-third(right);
+
+  ul {
+    border-left: 4px solid $brand-primary;
+    padding: 0 0 0 $padding;
+  }
+}

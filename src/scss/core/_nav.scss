@@ -38,7 +38,7 @@
   .nav-item > a:hover,
   .nav-item > a:focus,
   .nav-item > a.open  {
-    background: transparent;
+    background: $medium-grey;
   }
 
   .nav-item > a:focus {
@@ -101,7 +101,7 @@
 
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: $small-screen) {
 
   .nav-item {
     display: block;
