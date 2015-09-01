@@ -14,7 +14,7 @@ $tiny-screen: 480px;
 
 // Colours
 
-//Brand
+// Brand
 $brand-primary: #2e358b;
 $brand-secondary: #6f72af;
 $brand-tertiary: #d53880;
@@ -28,23 +28,24 @@ $base-font-colour: #222;
 $body-bg: #fff;
 $light-grey: #f8f8f8;
 $medium-grey: #c8c8c8;
+$dark-grey: #6f777b;
 $black: #0b0c0c;
 $link-colour: $brand-primary;
-$link-hover-colour: $brand-secondary;
+$link-hover-colour: $brand-tertiary;
 
 // Buttons
 $button: $brand-primary;
 $button-inactive: scale-color($brand-primary, $lightness: 50%);
-$button-hover: $brand-secondary;
+$button-hover: $brand-tertiary;
 
 // Tables
-$table-borders: #666;
+$table-borders: $medium-grey;
 
 // Borders
-$border-colour: #6f777b;
+$border-colour: $dark-grey;
 $border-radius: 0px;
-$input-border: #6f777b;
-$input-border-focus: #ffbf47;
+$input-border: $dark-grey;
+$input-border-focus: $highlight;
 
 // Margins
 $margin: 30px;
