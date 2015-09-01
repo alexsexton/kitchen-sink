@@ -4,12 +4,12 @@ A lightweight and complete framework for projects.
 
 First run `bower install` then `sudo npm install` to load bower components and node modules.
 
-## To Do
+## To Do (lots still)
 
 Partial out SCSS into folders (partials/common/components)
 Extend the variables.scss file to include all possible components.
 
-## Key Points
+## This is (or will be)
 
 Lean, standards compliant and accessible re-usable code and components.
 CSS classes with consistent and relevant naming conventions.
@@ -59,9 +59,11 @@ Using BX slider because it has a destroy method which when combined with enquire
   - https://github.com/adobe-accessibility/Accessible-Mega-Menu
 
 ### Responsive Tables
+
 ### Tabs
   - [rolled my own]
 
 ### Tool Tips or Hint Text
+
 ### Video Polyfill
   - https://github.com/davatron5000/FitVids.js
