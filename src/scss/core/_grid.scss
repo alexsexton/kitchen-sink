@@ -2,6 +2,11 @@
 
 $col-margin: 3.125%;
 
+@mixin full {
+  width: 100%;
+  float: none;
+}
+
 @mixin column-half ($float) {
   width: 48.484848484848%;
   float: $float;
