@@ -9,7 +9,7 @@ $base-sans: $font-family-sans;
 $base-font-size: 19px;
 $base-line-height: 1.618; // phi
 
-// Rem/PX 
+// Rem/PX
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
@@ -75,13 +75,6 @@ article p {
   max-width: 40em;
 }
 
-article blockquote {
-  padding: 0 0 0 2em;
-  margin: 0 0 1em 0;
-  max-width: 40em;
-  border-left: 4px solid scale-color($base-font-colour, $lightness: 50%);
-}
-
 article ul {
   margin: 0 0 1em 1em;
   li {
@@ -105,6 +98,21 @@ article ol {
         list-style-type: lower-latin;
       }
     }
+  }
+}
+
+blockquote {
+  padding: 0 0 0 2em;
+  margin: 0 0 1em 0;
+  max-width: 40em;
+  border-left: 4px solid scale-color($base-font-colour, $lightness: 50%);
+
+  cite:before {
+    content: "\2014\00a0";
+  }
+
+  cite {
+    font-family: $font-family-serif;
   }
 }
 
@@ -176,4 +184,54 @@ a:focus {}
 
 .post-image.alignleft {
   margin-left: 0;
+}
+
+
+// Typography and brand
+
+.typography-and-brand {
+
+  font-size: $base-font-size*2.618;
+
+  .sans p {
+    font-family: $font-family-sans;
+  }
+
+  .serif p {
+    font-family: $font-family-serif;
+  }
+
+  .colours {
+
+    li {
+      text-indent: -9999em;
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+      background: $base-font-colour;
+      margin: 0 1em 0 0;
+      display: inline-block;
+    }
+
+    .primary {
+      background: $brand-primary;
+    }
+
+    .secondary {
+      background: $brand-secondary;
+    }
+
+    .tertiary {
+      background: $brand-tertiary;
+    }
+
+    .error {
+      background: $error;
+    }
+
+    .hightlight {
+      background: $highlight;
+    }
+  }
+
 }

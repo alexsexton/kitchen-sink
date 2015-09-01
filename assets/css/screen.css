@@ -107,13 +107,6 @@ article p {
   max-width: 40em;
 }
 
-article blockquote {
-  padding: 0 0 0 2em;
-  margin: 0 0 1em 0;
-  max-width: 40em;
-  border-left: 4px solid #919191;
-}
-
 article ul {
   margin: 0 0 1em 1em;
 }
@@ -140,6 +133,19 @@ article ol li ol li {
   list-style-type: lower-latin;
 }
 
+blockquote {
+  padding: 0 0 0 2em;
+  margin: 0 0 1em 0;
+  max-width: 40em;
+  border-left: 4px solid #919191;
+}
+blockquote cite:before {
+  content: "\2014\00a0";
+}
+blockquote cite {
+  font-family: "Georgia", Times, Serif;
+}
+
 hr {
   border: 0;
   margin: 1em 0;
@@ -156,16 +162,16 @@ hr:after {
 }
 
 a {
-  color: #005ea5;
+  color: #2e358b;
   text-decoration: none;
 }
 
 a:hover {
-  color: #2e8aca;
+  color: #6f72af;
 }
 
 a:visited {
-  color: #005ea5;
+  color: #2e358b;
 }
 
 a:active {
@@ -197,6 +203,40 @@ a:active {
 
 .post-image.alignleft {
   margin-left: 0;
+}
+
+.typography-and-brand {
+  font-size: 49.742px;
+}
+.typography-and-brand .sans p {
+  font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
+}
+.typography-and-brand .serif p {
+  font-family: "Georgia", Times, Serif;
+}
+.typography-and-brand .colours li {
+  text-indent: -9999em;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background: #222;
+  margin: 0 1em 0 0;
+  display: inline-block;
+}
+.typography-and-brand .colours .primary {
+  background: #2e358b;
+}
+.typography-and-brand .colours .secondary {
+  background: #6f72af;
+}
+.typography-and-brand .colours .tertiary {
+  background: #d53880;
+}
+.typography-and-brand .colours .error {
+  background: #df3034;
+}
+.typography-and-brand .colours .hightlight {
+  background: #ffbf47;
 }
 
 input[type=text],
@@ -251,15 +291,15 @@ textarea:focus {
 }
 
 .button:hover {
-  background: #912b88;
+  background: #6f72af;
 }
 
 .button:active, .button:focus {
-  background: #912b88;
+  background: #6f72af;
 }
 
 .button[disabled="disabled"], .button:hover[disabled="disabled"] {
-  background: #2e358b;
+  background: #858bd7;
   cursor: default;
   opacity: 0.5;
 }
@@ -292,7 +332,7 @@ textarea:focus {
 
 .form-error {
   padding: 15px;
-  background: #ef9799;
+  background: #ef989a;
 }
 
 .form-error input[type=text] {
@@ -494,7 +534,7 @@ body {
   margin: 0;
 }
 .hero .hero-caption a {
-  color: #005ea5;
+  color: #2e358b;
 }
 
 .triangle-up:before {

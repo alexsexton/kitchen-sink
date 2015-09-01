@@ -29,13 +29,13 @@ $body-bg: #fff;
 $light-grey: #f8f8f8;
 $medium-grey: #c8c8c8;
 $black: #0b0c0c;
-$link-colour: #005ea5;
-$link-hover-colour: #2e8aca;
+$link-colour: $brand-primary;
+$link-hover-colour: $brand-secondary;
 
 // Buttons
-$button: #2e358b;
-$button-inactive: #6f72af;
-$button-hover: #912b88;
+$button: $brand-primary;
+$button-inactive: scale-color($brand-primary, $lightness: 50%);
+$button-hover: $brand-secondary;
 
 // Tables
 $table-borders: #666;

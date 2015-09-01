@@ -62,7 +62,7 @@ textarea:focus {
 }
 
 .button[disabled="disabled"], .button:hover[disabled="disabled"] {
-  background: $button;
+  background: $button-inactive;
   cursor: default;
   opacity: 0.5;
 }
