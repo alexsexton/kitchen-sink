@@ -3,7 +3,6 @@
 html {
   font-size: 62.5%; // Creates a baseline of 1em/rem = 10px;
   background: $body-bg;
-
 }
 
 body {
@@ -19,7 +18,6 @@ body {
   margin: auto;
   padding: 0 30px;
 }
-
 
 .hero {
   position: relative;
@@ -43,7 +41,6 @@ body {
     }
   }
 }
-
 
 .triangle-up:before {
   @include arrow-up(30px,#000)

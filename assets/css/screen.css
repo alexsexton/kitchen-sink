@@ -93,8 +93,8 @@ h6 {
 }
 
 .section-header {
-  border-bottom: 1px dotted #b6bbbe;
-  border-top: 1px dotted #b6bbbe;
+  border-bottom: 1px solid #b6bbbe;
+  border-top: 1px solid #b6bbbe;
   margin: 30px 0;
 }
 
@@ -105,6 +105,7 @@ h6 {
 article p {
   margin: 0 0 1em 0;
   max-width: 40em;
+  -webkit-font-variant-ligatures: discretionary-ligatures;
 }
 
 article ul {
@@ -167,7 +168,7 @@ a {
 }
 
 a:hover {
-  color: #6f72af;
+  color: #d53880;
 }
 
 a:visited {
@@ -258,6 +259,16 @@ textarea {
   width: 50%;
 }
 
+@media screen and (max-width: 780px) {
+  input[type=text],
+  input[type=search],
+  input[type=email],
+  input[type=phone],
+  input[type=password],
+  textarea {
+    width: 100%;
+  }
+}
 input[type=file] {
   outline: none;
   font-size: 19px;
@@ -291,11 +302,11 @@ textarea:focus {
 }
 
 .button:hover {
-  background: #6f72af;
+  background: #d53880;
 }
 
 .button:active, .button:focus {
-  background: #6f72af;
+  background: #d53880;
 }
 
 .button[disabled="disabled"], .button:hover[disabled="disabled"] {
@@ -648,6 +659,12 @@ body {
   padding: 0 0 0 30px;
 }
 
+@media screen and (max-width: 780px) {
+  .main-content, .sidebar {
+    width: 100%;
+    float: none;
+  }
+}
 /** RESET AND LAYOUT
 ===================================*/
 .bx-wrapper {
@@ -822,11 +839,11 @@ table thead {
   text-align: left;
 }
 table thead th {
-  border-bottom: 2px solid #666;
+  border-bottom: 2px solid #c8c8c8;
   font-weight: bold;
 }
 table tbody tr {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #c8c8c8;
 }
 
 .blocks .block {
