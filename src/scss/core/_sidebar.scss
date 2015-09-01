@@ -1,8 +1,6 @@
-
 .main-content {
   @include column-two-thirds(left);
 }
-
 
 .sidebar {
   @include column-third(right);
@@ -11,4 +9,12 @@
     border-left: 4px solid $brand-primary;
     padding: 0 0 0 $padding;
   }
+}
+
+@media screen and (max-width: $small-screen) {
+
+  .main-content, .sidebar {
+    @include full;
+  }
+
 }
