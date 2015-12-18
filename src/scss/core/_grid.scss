@@ -1,53 +1,62 @@
 // Grid Mixins should maybe do some magic on this with some maths
+// 990px max width 30px gutters
 
-$col-margin: 3.125%;
+// 30
+$col-margin: 3.03030303%;
 
 @mixin full {
   width: 100%;
   float: none;
 }
 
+//480
 @mixin column-half ($float) {
-  width: 48.484848484848%;
+  width: 48.48484848%;
   float: $float;
 }
 
+// 310
 @mixin column-third ($float) {
- width: 31.25%;
+ width: 31.31313131%;
  float: $float;
 }
 
 @mixin column-two-thirds ($float) {
-  width: 65.625%;
+  width: 65.65656565%;
   float: $float;
 }
 
+// 225
 @mixin column-quarter ($float) {
-  width: 22.65625%;
+  width: 22.72727273%;
   float: $float;
 }
-
+// 735
 @mixin column-three-quarters ($float) {
-  width: 74.21875%;
+  width: 74.24242424%;
   float: $float;
 }
 
+// 174
 @mixin column-fifth ($float) {
-  width: 17.5%;
+  width: 17.57575758%;
   float: $float;
 }
 
+// 378
 @mixin column-two-fifths ($float) {
-  width: 38.125%;
+  width: 38.18181818%;
   float: $float;
 }
 
+// 582
 @mixin column-three-fifths ($float) {
-  width: 58.75%;
+  width: 58.78787879%;
   float: $float;
 }
 
+// 786
 @mixin column-four-fifths ($float) {
-  width: 79.375%;
+  width: 79.39393939%;
   float: $float;
 }

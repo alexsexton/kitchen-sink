@@ -16,7 +16,7 @@ body {
 .row {
   max-width: $site-max-width;
   margin: auto;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .hero {
@@ -78,7 +78,7 @@ body {
 // 300
 .column-third {
   @include column-third(left);
-  margin: 0 3.125% 0 0;
+  margin: 0 $col-margin 0 0;
 }
 
 .column-third:last-of-type {
@@ -93,7 +93,7 @@ body {
 // 217.5
 .column-quarter {
   @include column-quarter(left);
-  margin: 0 3.125% 0 0;
+  margin: 0 $col-margin 0 0;
 }
 
 .column-quarter:last-of-type {
@@ -108,7 +108,7 @@ body {
 // 168
 .column-fifth {
   @include column-fifth(left);
-  margin: 0 3.125% 0 0;
+  margin: 0 $col-margin 0 0;
 }
 
 .column-fifth:last-of-type {

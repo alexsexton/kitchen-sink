@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 // Navigation
 $(document).ready(function(){
-  $("#js-main-navition").accessibleMegaMenu({
+  $("#js-main-navigation").accessibleMegaMenu({
     uuidPrefix: "accessible-nav",
     menuClass: "nav-menu",
     topNavItemClass: "nav-item",

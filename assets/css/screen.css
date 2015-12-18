@@ -523,7 +523,7 @@ body {
 .row {
   max-width: 1020px;
   margin: auto;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .hero {
@@ -580,19 +580,19 @@ body {
 }
 
 .column-half {
-  width: 48.484848484848%;
+  width: 48.48484848%;
   float: left;
 }
 
 .column-half:last-of-type {
-  width: 48.484848484848%;
+  width: 48.48484848%;
   float: right;
 }
 
 .column-third {
-  width: 31.25%;
+  width: 31.31313131%;
   float: left;
-  margin: 0 3.125% 0 0;
+  margin: 0 3.0303% 0 0;
 }
 
 .column-third:last-of-type {
@@ -600,15 +600,15 @@ body {
 }
 
 .column-two-thirds {
-  width: 65.625%;
+  width: 65.65656565%;
   float: right;
   float: right;
 }
 
 .column-quarter {
-  width: 22.65625%;
+  width: 22.72727273%;
   float: left;
-  margin: 0 3.125% 0 0;
+  margin: 0 3.0303% 0 0;
 }
 
 .column-quarter:last-of-type {
@@ -616,14 +616,14 @@ body {
 }
 
 .column-three-quaters {
-  width: 74.21875%;
+  width: 74.24242424%;
   float: right;
 }
 
 .column-fifth {
-  width: 17.5%;
+  width: 17.57575758%;
   float: left;
-  margin: 0 3.125% 0 0;
+  margin: 0 3.0303% 0 0;
 }
 
 .column-fifth:last-of-type {
@@ -631,27 +631,27 @@ body {
 }
 
 .column-two-fiths {
-  width: 38.125%;
+  width: 38.18181818%;
   float: left;
 }
 
 .column-three-fiths {
-  width: 58.75%;
+  width: 58.78787879%;
   float: right;
 }
 
 .column-four-fiths {
-  width: 79.375%;
+  width: 79.39393939%;
   float: right;
 }
 
 .main-content {
-  width: 65.625%;
+  width: 65.65656565%;
   float: left;
 }
 
 .sidebar {
-  width: 31.25%;
+  width: 31.31313131%;
   float: right;
 }
 .sidebar ul {
