@@ -23,3 +23,13 @@
   border-right: $size solid transparent;;
   border-top: $size solid $colour;
 }
+
+@mixin hide {
+    position: absolute;
+    left: -9999em;
+}
+
+@mixin show {
+    position: static;
+    left: inherit;
+}

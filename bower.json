@@ -1,5 +1,5 @@
 {
-  "name": "KitchenSink",
+  "name": "kitchen-sink",
   "dependencies": {
     "jquery": "~1.12",
     "jquery": "~2.2",

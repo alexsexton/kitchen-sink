@@ -1,6 +1,6 @@
 {
-  "name": "KitchenSink",
-  "version": "0.0.3",
+  "name": "kitchen-sink",
+  "version": "0.0.4",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-jshint": "~0.10.0",
