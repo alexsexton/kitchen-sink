@@ -7,12 +7,12 @@ $grid-gutters: 30px;
 // Row
 @mixin row($inside: false) {
   @if($inside == true) {
-    margin-left: -$gutter/2;
-    margin-right: -$gutter/2;
+    margin-left: -$grid-gutters/2;
+    margin-right: -$grid-gutters/2;
   }
   @else {
     width: 100%;
-    max-width: $wrapper;
+    max-width: $grid-wrapper;
     margin-left: auto;
     margin-right: auto;
   }
@@ -31,8 +31,8 @@ $grid-gutters: 30px;
   float: left;
   width: percentage($width);
   @if($padding == true) {
-    padding-left: $gutter/2;
-    padding-right: $gutter/2;
+    padding-left: $grid-gutters/2;
+    padding-right: $grid-gutters/2;
   }
 }
 
