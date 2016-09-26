@@ -19,15 +19,15 @@ module.exports = function(grunt) {
           style: "expanded",
         },
         files: {
-          "assets/css/screen.css" : "src/scss/screen.scss"
+          "static/css/screen.css" : "assets/scss/screen.scss"
         }
       }
     },
 
     concat: {
       dist: {
-        src: ["src/js/plugins/*.js"],
-        dest: "src/js/plugins.js",
+        src: ["assets/js/plugins/*.js"],
+        dest: "assets/js/plugins.js",
       },
     },
 
@@ -37,8 +37,8 @@ module.exports = function(grunt) {
       },
       js: {
         files: {
-        "assets/js/main.min.js" : "src/js/main.js",
-        "assets/js/plugins.min.js" : "src/js/plugins.js"
+        "static/js/main.min.js" : "assets/js/main.js",
+        "static/js/plugins.min.js" : "assets/js/plugins.js"
         }
       }
     },
@@ -47,9 +47,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
             expand: true,
-            cwd: "src/images",
+            cwd: "assets/images",
             src: ["**/*.{png,jpg,gif}"],
-            dest: "assets/images",
+            dest: "static/images",
         }],
       },
     },
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
         tasks: ["sass"]
       },
       js: {
-        files: ["assets/**/*.js", "src/**/*.js"],
+        files: ["static/**/*.js", "assets/**/*.js"],
         tasks: ["uglify", "concat"]
       }
     },
