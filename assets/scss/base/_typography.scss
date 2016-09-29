@@ -1,26 +1,6 @@
-// Typography Based on a modular scale
-// 19px @ 1:1.618 (base font size)  960px @ 1:1.618 (outer wrapper width)
-
-// Fonts
-
-$font-family-sans: "Open Sans",Helvetica,Arial,Sans-Serif;
-$font-family-serif: "Georgia",Times,Serif;
-$base-sans: $font-family-sans;
-$base-font-size: 19px;
-$base-line-height: 1.618; // phi
-
-// Apple iOS system font, iOS San Francisco, Apple San Francisco, Android, Windows Phone;
-$system-font-family-sans: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue";
-
-
-// Rem/PX
-@mixin font-size($sizeValue: 1.6) {
-  font-size: ($sizeValue * 10) + px;
-  font-size: $sizeValue + rem;
-}
+// Typography 
 
 // Headings
-
 h1 {
   font-size: $base-font-size*2.618;
   font-weight: 600;

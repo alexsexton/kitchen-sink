@@ -51,3 +51,15 @@ $border-radius: 0px;
 $input-border: $dark-grey;
 $input-border-focus: $highlight;
 
+// Typography
+$system-font-family-sans: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", Sans-Serif;
+// Use system-font-family for iOS/ Android devices. Listed are: Apple iOS system font, iOS San Francisco, Apple San Francisco, Android, Windows Phone;
+$font-family-sans: "nta", $system-font-family-sans;
+$font-family-serif: "Georgia", Times,Serif;
+$base-sans: $font-family-sans;
+$base-font-size: 19px;
+$base-line-height: 1.4;
+$header-line-height: 1.2;
+$footer-font-size: 16px;
+$small-screen-font-size: 16px;
+$print-font-size: $small-screen-font-size;
