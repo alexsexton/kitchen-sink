@@ -50,38 +50,6 @@
 
       </section>
 
-      <section class="hero-slider">
-
-        <header class="section-header">
-          <h1>Hero Slider</h1>
-        </header>
-
-        <ul class="slider">
-          <li>
-            <img src="static/images/placeholder-wide.png" alt="">
-            <div class="hero-caption">
-              <h2>Caption 01</h2>
-              <p>More <a href="#">information</a> can go here</p>
-            </div>
-          </li>
-          <li>
-            <img src="static/images/placeholder-wide-blue.png" alt="">
-            <div class="hero-caption">
-              <h2>Caption 02</h2>
-              <p>More <a href="#">information</a> can go here</p>
-            </div>
-          </li>
-          <li>
-            <img src="static/images/placeholder-wide-grey.png" alt="">
-            <div class="hero-caption">
-              <h2>Caption 03</h2>
-              <p>More <a href="#">information</a> can go here</p>
-            </div>
-          </li>
-        </ul>
-
-      </section>
-
       <section class="typography-and-brand group">
         <header class="section-header">
           <h1>Typography and Branding</h1>
