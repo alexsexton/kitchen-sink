@@ -9,12 +9,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy')
   grunt.loadNpmTasks('grunt-contrib-clean')
 
-  grunt.renameTask('watch', '_watch')
-
-  grunt.registerTask('watch', [ 'default', '_watch' ])
-
-  grunt.registerTask('default', ['uglify', 'concat', 'imagemin', 'clean', 'bower-install', 'sass', 'standard', 'copy', 'modernizr'])
-
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
@@ -115,6 +109,13 @@ module.exports = function (grunt) {
       }
     }
   })
+
+  grunt.renameTask('watch', '_watch')
+
+  grunt.registerTask('watch', [ 'default', '_watch' ])
+
+  grunt.registerTask('default', ['uglify', 'concat', 'imagemin', 'clean', 'bower-install', 'sass', 'standard', 'copy', 'modernizr'])
+
   grunt.registerTask('bower-install', 'Installs bower deps', function () {
     var done = this.async()
     var bower = require('bower')
