@@ -11,21 +11,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Canonical -->
   <link rel="canonical" href="#">
-
-  <!-- Prefetch external asset dns -->
-  <link rel="dns-prefetch" href="#">
-
-  <!-- Prefetch internal image assets -->
-  <link rel="prefetch" href="#">
-
-  <link rel="stylesheet" href="static/css/screen.css" media="screen">
-
-  <script src="static/lib/modernizr.js"></script>
-
-  <link rel="shortcut icon" href="touch-icon.png">
-  <link rel="apple-touch-icon-precomposed" href="touch-icon.png">
 
   <?php require_once 'includes/head.php'; ?>
 
