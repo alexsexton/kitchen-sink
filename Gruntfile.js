@@ -9,7 +9,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy')
   grunt.loadNpmTasks('grunt-contrib-clean')
 
-  grunt.registerTask('default', ['watch', 'uglify', 'concat', 'imagemin', 'clean', 'bower-install', 'sass', 'standard', 'copy', 'modernizr'])
+  grunt.renameTask('watch', '_watch')
+
+  grunt.registerTask('watch', [ 'default', '_watch' ])
+
+  grunt.registerTask('default', ['uglify', 'concat', 'imagemin', 'clean', 'bower-install', 'sass', 'standard', 'copy', 'modernizr'])
 
   grunt.initConfig({
 
@@ -55,7 +59,8 @@ module.exports = function (grunt) {
     copy: {
       production: {
         files: {
-          'static/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js'
+          'static/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js',
+          'static/fonts/*': 'assets/fonts/*'
         }
       }
     },
