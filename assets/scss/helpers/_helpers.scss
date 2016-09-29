@@ -1,3 +1,9 @@
+// Rem/PX
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
 // Percentage Function
 // Use like this
 // div {width: pc(500,1280);}
