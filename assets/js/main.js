@@ -4,7 +4,7 @@
 'use strict'
 
 // Depenedencies
-// var enquire = require('../../*.js')
+// var somevar = require('../../*.js')
 require('../../bower_components/jquery-accessibleMegaMenu/js/jquery-accessibleMegaMenu.js')
 require('../../bower_components/fitvids/jquery.fitvids.js')
 

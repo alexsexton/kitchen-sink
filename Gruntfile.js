@@ -53,8 +53,7 @@ module.exports = function (grunt) {
     copy: {
       production: {
         files: {
-          'static/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js',
-          'static/fonts/*': 'assets/fonts/*'
+          'static/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js'
         }
       }
     },
@@ -79,12 +78,12 @@ module.exports = function (grunt) {
     },
 
     imagemin: {
-      dist: {
+      dynamic: {
         files: [{
           expand: true,
-          cwd: 'assets/images',
+          cwd: 'assets/images/',
           src: ['**/*.{png,jpg,gif}'],
-          dest: 'static/images'
+          dest: 'static/images/'
         }]
       }
     },
@@ -114,7 +113,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('watch', [ 'default', '_watch' ])
 
-  grunt.registerTask('default', ['uglify', 'concat', 'imagemin', 'clean', 'bower-install', 'sass', 'standard', 'copy', 'modernizr'])
+  grunt.registerTask('default', ['clean', 'uglify', 'concat', 'imagemin', 'bower-install', 'sass', 'standard', 'copy', 'modernizr'])
 
   grunt.registerTask('bower-install', 'Installs bower deps', function () {
     var done = this.async()
