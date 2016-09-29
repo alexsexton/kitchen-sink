@@ -1,6 +1,5 @@
 module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sass')
-  grunt.loadNpmTasks('grunt-contrib-concat')
   grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-contrib-imagemin')
   grunt.loadNpmTasks('grunt-contrib-watch')
@@ -8,6 +7,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-modernizr')
   grunt.loadNpmTasks('grunt-contrib-copy')
   grunt.loadNpmTasks('grunt-contrib-clean')
+  grunt.loadNpmTasks('grunt-browserify')
+  grunt.loadNpmTasks('grunt-exorcise')
 
   grunt.initConfig({
 
@@ -50,29 +51,42 @@ module.exports = function (grunt) {
       }
     },
 
-    copy: {
-      production: {
-        files: {
-          'static/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js'
-        }
-      }
-    },
-
-    concat: {
-      dist: {
-        src: ['assets/js/plugins/*.js'],
-        dest: 'assets/js/plugins.js'
-      }
-    },
-
     uglify: {
       options: {
         seperator: ';\n'
       },
       js: {
         files: {
-          'static/js/main.min.js': 'assets/js/main.js',
-          'static/js/plugins.min.js': 'assets/js/plugins.js'
+          'static/js/main.min.js': 'assets/js/main.js'
+        }
+      }
+    },
+
+    browserify: {
+      options: {
+        browserifyOptions: {
+          debug: true
+        }
+      },
+      production: {
+        files: {
+          'static/js/main.min.js': 'assets/js/main.js'
+        }
+      }
+    },
+
+    exorcise: {
+      production: {
+        files: {
+          'static/js/main.min.js': 'assets/js/main.js'
+        }
+      }
+    },
+
+    copy: {
+      production: {
+        files: {
+          'static/lib/jquery.min.js': 'bower_components/jquery/dist/jquery.min.js'
         }
       }
     },
@@ -95,7 +109,7 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['static/**/*.js', 'assets/**/*.js'],
-        tasks: ['standard', 'uglify', 'concat']
+        tasks: ['standard', 'uglify', 'browserify', 'exorcise']
       }
     },
 
@@ -113,7 +127,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('watch', [ 'default', '_watch' ])
 
-  grunt.registerTask('default', ['clean', 'uglify', 'concat', 'imagemin', 'bower-install', 'sass', 'standard', 'copy', 'modernizr'])
+  grunt.registerTask('default', ['clean', 'uglify', 'imagemin', 'bower-install', 'sass', 'standard', 'copy', 'browserify', 'exorcise', 'modernizr'])
 
   grunt.registerTask('bower-install', 'Installs bower deps', function () {
     var done = this.async()
