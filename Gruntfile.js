@@ -1,4 +1,6 @@
 module.exports = function (grunt) {
+  'use strict'
+  
   grunt.loadNpmTasks('grunt-sass')
   grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-contrib-imagemin')
