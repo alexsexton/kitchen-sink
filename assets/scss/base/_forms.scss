@@ -154,6 +154,10 @@ label.checkbox-group input[type=checkbox] {
   left: 15px;
 }
 
-input[type=radio]:before {}
+input[type=radio]:before {
+  content: "";
+}
 
-input[type=radio]:after {}
+input[type=radio]:after {
+  content: "";
+}
