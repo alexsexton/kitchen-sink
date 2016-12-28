@@ -1,9 +1,11 @@
-// Screen CSS
+// Main CSS
 
 @import "settings/colours";
 @import "settings/global";
+
 @import "helpers/mixins";
 @import "helpers/grid";
+
 @import "base/reset";
 @import "base/typography";
 @import "base/forms";
@@ -12,6 +14,19 @@
 @import "base/footer";
 @import "base/site";
 @import "base/sidebar";
+
 @import "components/tabs";
 @import "components/tables";
-@import "ie";
+
+@import "templates/example";
+
+@import "templates/home";
+@import "templates/pages";
+@import "templates/blog";
+
+// Shopify specific
+// @import "templatess/category";
+// @import "templatess/product-list";
+// @import "templatess/product-detail";
+
+@import "base/ie";

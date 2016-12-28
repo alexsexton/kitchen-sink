@@ -3,11 +3,6 @@
 
 'use strict'
 
-// Depenedencies
-// var somevar = require('../../*.js')
-require('../../bower_components/jquery-accessibleMegaMenu/js/jquery-accessibleMegaMenu.js')
-require('../../bower_components/fitvids/jquery.fitvids.js')
-
 jQuery(function ($) {
   // Tabs
   $(document).ready(function () {

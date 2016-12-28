@@ -1,7 +1,7 @@
 <link rel="dns-prefetch" href="#">
 <link rel="prefetch" href="#">
 
-<link rel="stylesheet" href="static/css/screen.css" media="screen">
+<link rel="stylesheet" href="static/css/main.css" media="screen">
 
 <script src="static/lib/modernizr.min.js"></script>
 

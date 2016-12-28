@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Simple two col layout
 *
 * .row {
@@ -91,118 +90,52 @@ h6 {
   font-weight: 600;
   margin: 0.5em 0 0.75em 0; }
 
-.section-header {
-  border-bottom: 1px solid #b6bbbe;
-  border-top: 1px solid #b6bbbe;
-  margin: 30px 0; }
-
-.section-header h1 {
-  margin: 0.5em 0; }
-
-article p {
+.rich-text p {
   margin: 0 0 1em 0;
   max-width: 40em;
   -webkit-font-variant-ligatures: discretionary-ligatures; }
 
-article ul {
+.rich-text ul {
   margin: 0 0 1em 1em; }
-  article ul li {
+  .rich-text ul li {
     list-style-type: disc; }
-    article ul li ul {
+    .rich-text ul li ul {
       margin: 0 0 0 1em; }
-      article ul li ul li {
+      .rich-text ul li ul li {
         list-style-type: circle; }
 
-article ol {
+.rich-text ol {
   margin: 0 0 1em 1em; }
-  article ol li {
+  .rich-text ol li {
     list-style-type: decimal; }
-    article ol li ol {
+    .rich-text ol li ol {
       margin: 0 0 0 1em; }
-      article ol li ol li {
+      .rich-text ol li ol li {
         list-style-type: lower-latin; }
 
-blockquote {
+.rich-text blockquote {
   padding: 0 0 0 2em;
   margin: 0 0 1em 0;
   max-width: 40em;
   border-left: 4px solid #919191; }
-  blockquote cite:before {
+  .rich-text blockquote cite:before {
     content: "\2014\00a0"; }
-  blockquote cite {
+  .rich-text blockquote cite {
     font-family: "Georgia", Times, Serif; }
 
-hr {
-  border: 0;
-  margin: 1em 0;
-  line-height: 1;
-  text-align: center;
-  font-size: 38px;
-  color: #919191; }
-
-hr:after {
-  content: "···";
-  letter-spacing: 1em;
-  height: 0; }
-
-a {
+.rich-text a {
   color: #2e358b;
   text-decoration: none; }
 
-a:hover {
+.rich-text a:hover {
   color: #d53880; }
 
-a:visited {
+.rich-text a:visited {
   color: #2e358b; }
 
-a:active {
+.rich-text a:active {
   color: #0b0c0c;
   background: #ffbf47; }
-
-.post-image {
-  width: 33%;
-  margin: 30px; }
-
-.post-image img {
-  width: 100%;
-  height: auto; }
-
-.alignright {
-  float: right; }
-
-.alignleft {
-  float: left; }
-
-.post-image.alignright {
-  margin-right: 0; }
-
-.post-image.alignleft {
-  margin-left: 0; }
-
-.typography-and-brand {
-  font-size: 49.742px; }
-  .typography-and-brand .sans p {
-    font-family: "nta", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", Sans-Serif; }
-  .typography-and-brand .serif p {
-    font-family: "Georgia", Times, Serif; }
-  .typography-and-brand .colours li {
-    text-indent: -9999em;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    background: #222;
-    margin: 0 1em 0 0;
-    display: inline-block; }
-  .typography-and-brand .colours .primary {
-    background: #2e358b; }
-  .typography-and-brand .colours .secondary {
-    background: #6f72af; }
-  .typography-and-brand .colours .tertiary {
-    background: #d53880; }
-  .typography-and-brand .colours .error {
-    background: #df3034; }
-  .typography-and-brand .colours .hightlight {
-    background: #ffbf47; }
 
 input[type=text],
 input[type=search],
@@ -325,69 +258,55 @@ label.checkbox-group input[type=checkbox] {
   top: 20px;
   left: 15px; }
 
-input[type=radio]:before {
-  content: ""; }
-
-input[type=radio]:after {
-  content: ""; }
-
 .navigation {
   margin: 30px 0;
   text-align: center; }
   .navigation .nav-menu {
     position: relative;
-    text-align: left; }
+    text-align: left;
+    display: block;
+    z-index: 15; }
+  .navigation .nav-item {
+    display: inline-block; }
+  .navigation .nav-item > a.open {
+    border-bottom: none;
+    z-index: 1; }
   .navigation .nav-item > a {
     float: left;
+    position: relative;
+    display: inline-block;
     padding: 15px 30px; }
-  .navigation .sub-nav {
-    background: #c8c8c8; }
-  .navigation .sub-nav-group {
-    float: left;
-    padding: 30px; }
-  .navigation .sub-nav ul li {
-    padding: 0 0 0 15px; }
-  .navigation .sub-nav a {
-    display: block;
-    margin: 0 30px 0 0;
-    min-width: 200px; }
-  .navigation a {
-    text-decoration: none; }
   .navigation .nav-item > a:hover,
   .navigation .nav-item > a:focus,
   .navigation .nav-item > a.open {
     background: #c8c8c8; }
   .navigation .nav-item > a:focus {
     outline: 2px solid #2e358b; }
-  .navigation .sub-nav a:focus {
-    outline: 2px solid #2e358b; }
-  .navigation .nav-menu {
-    display: block;
-    position: relative;
-    z-index: 15; }
-  .navigation .nav-item {
-    display: inline-block; }
-  .navigation .nav-item > a {
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px; }
-  .navigation .nav-item > a.open {
-    border-bottom: none;
-    z-index: 1; }
   .navigation .sub-nav {
+    background: #c8c8c8;
     position: absolute;
     display: none;
     top: 60px;
     padding: 15px 30px; }
   .navigation .sub-nav.open {
     display: block; }
+  .navigation .sub-nav-group {
+    float: left;
+    padding: 30px; }
   .navigation .sub-nav ul {
     display: inline-block;
     vertical-align: top;
     margin: 0 30px 0 0;
     padding: 0; }
   .navigation .sub-nav li {
+    padding: 0 0 0 15px;
     display: block; }
+  .navigation .sub-nav a {
+    display: block;
+    margin: 0 30px 0 0;
+    min-width: 200px; }
+  .navigation .sub-nav a:focus {
+    outline: 2px solid #2e358b; }
 
 @media screen and (max-width: 780px) {
   .nav-item {
@@ -411,9 +330,7 @@ input[type=radio]:after {
   background: #f8f8f8; }
   .header .logo {
     width: 150px;
-    height: 150px;
-    clear: both;
-    margin: auto; }
+    height: 150px; }
     .header .logo img {
       width: 100%; }
   .header .search .button {
@@ -438,39 +355,6 @@ body {
   max-width: 1020px;
   margin: auto;
   padding: 0 15px; }
-
-.hero {
-  position: relative; }
-  .hero img {
-    width: 100%;
-    height: auto; }
-  .hero .hero-caption {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    background: #0b0c0c;
-    padding: 15px;
-    color: #f8f8f8; }
-    .hero .hero-caption h2 {
-      margin: 0; }
-    .hero .hero-caption a {
-      color: #2e358b; }
-
-.triangle-up:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 30px solid #000; }
-
-.triangle-down:before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 30px solid #ffbf47; }
 
 .main-content {
   float: left;
@@ -530,3 +414,69 @@ table {
       font-weight: bold; }
   table tbody tr {
     border-bottom: 1px solid #c8c8c8; }
+
+.hero {
+  position: relative; }
+  .hero img {
+    width: 100%;
+    height: auto; }
+  .hero .hero-caption {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: #0b0c0c;
+    padding: 15px;
+    color: #f8f8f8; }
+    .hero .hero-caption h2 {
+      margin: 0; }
+    .hero .hero-caption a {
+      color: #2e358b; }
+
+.section-header {
+  border-bottom: 1px solid #b6bbbe;
+  border-top: 1px solid #b6bbbe;
+  margin: 30px 0; }
+
+.section-header h1 {
+  margin: 0.5em 0; }
+
+.typography-and-brand {
+  font-size: 49.742px; }
+  .typography-and-brand .sans p {
+    font-family: "nta", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", Sans-Serif; }
+  .typography-and-brand .serif p {
+    font-family: "Georgia", Times, Serif; }
+  .typography-and-brand .colours li {
+    text-indent: -9999em;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: #222;
+    margin: 0 1em 0 0;
+    display: inline-block; }
+  .typography-and-brand .colours .primary {
+    background: #2e358b; }
+  .typography-and-brand .colours .secondary {
+    background: #6f72af; }
+  .typography-and-brand .colours .tertiary {
+    background: #d53880; }
+  .typography-and-brand .colours .error {
+    background: #df3034; }
+  .typography-and-brand .colours .hightlight {
+    background: #ffbf47; }
+
+.triangle-up:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #000; }
+
+.triangle-down:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #ffbf47; }

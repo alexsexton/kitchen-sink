@@ -6,7 +6,6 @@ html {
 }
 
 body {
-  // background: url("../images/baseline.png");
   font-family: $base-sans;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -17,35 +16,4 @@ body {
   max-width: $site-max-width;
   margin: auto;
   padding: 0 15px;
-}
-
-.hero {
-  position: relative;
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  .hero-caption {
-    position: absolute;
-    bottom:30px;
-    left: 30px;
-    background: $black;
-    padding: 15px;
-    color: $light-grey;
-    h2 {
-      margin: 0;
-    }
-    a {
-      color: $link-colour;
-    }
-  }
-}
-
-.triangle-up:before {
-  @include arrow-up(30px,#000)
-}
-
-.triangle-down:before {
-  @include arrow-down(30px,$highlight)
 }
