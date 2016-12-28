@@ -5,34 +5,24 @@
   .nav-menu {
     position: relative;
     text-align: left;
+    display: block;
+    z-index: 15;
+  }
+
+  .nav-item {
+    display: inline-block;
+  }
+
+  .nav-item > a.open {
+    border-bottom: none;
+    z-index: 1;
   }
 
   .nav-item > a {
     float: left;
+    position: relative;
+    display: inline-block;
     padding: $padding/2 $padding;
-  }
-
-  .sub-nav {
-    background: $medium-grey;
-  }
-
-  .sub-nav-group {
-    float: left;
-    padding: $padding;
-  }
-
-  .sub-nav ul li {
-    padding: 0 0 0 $padding/2;
-  }
-
-  .sub-nav a {
-    display: block;
-    margin: 0 $margin 0 0;
-    min-width: 200px;
-  }
-
-  a {
-    text-decoration: none;
   }
 
   .nav-item > a:hover,
@@ -44,40 +34,9 @@
   .nav-item > a:focus {
     outline: 2px solid $brand-primary;
   }
-
-  .sub-nav a:hover,
-  .sub-nav a:focus {
-  }
-
-  .sub-nav a:focus {
-    outline: 2px solid $brand-primary;
-  }
-
-  .nav-menu {
-    display: block;
-    position: relative;
-    z-index: 15;
-  }
-
-  .nav-item {
-    display: inline-block;
-  }
-  .nav-item > a {
-    position: relative;
-    display: inline-block;
-    padding: $padding/2 $padding;
-  }
-
-  .nav-item > a:focus,
-  .nav-item > a.open {
-  }
-
-  .nav-item > a.open {
-    border-bottom: none;
-    z-index: 1;
-  }
-
+  
   .sub-nav {
+    background: $medium-grey;
     position: absolute;
     display: none;
     top: 60px;
@@ -88,6 +47,11 @@
     display: block;
   }
 
+  .sub-nav-group {
+    float: left;
+    padding: $padding;
+  }
+
   .sub-nav ul {
     display: inline-block;
     vertical-align: top;
@@ -96,7 +60,18 @@
   }
 
   .sub-nav li {
+    padding: 0 0 0 $padding/2;
     display: block;
+  }
+
+  .sub-nav a {
+    display: block;
+    margin: 0 $margin 0 0;
+    min-width: 200px;
+  }
+
+  .sub-nav a:focus {
+    outline: 2px solid $brand-primary;
   }
 
 }
