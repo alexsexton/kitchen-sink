@@ -121,6 +121,7 @@ textarea:focus {
   font-weight: 600;
 }
 
+// Radios and Checboxes
 
 label.radio-group, label.checkbox-group {
   position: relative;
@@ -137,7 +138,7 @@ label.radio-group, label.checkbox-group {
   label.radio-group, label.checkbox-group {
     float: left;
     display: block;
-    clear:left;
+    clear: left;
   }
 
 }
@@ -152,12 +153,4 @@ label.checkbox-group input[type=checkbox] {
   position: absolute;
   top: 20px;
   left: 15px;
-}
-
-input[type=radio]:before {
-  content: "";
-}
-
-input[type=radio]:after {
-  content: "";
 }
