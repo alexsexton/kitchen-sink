@@ -2,13 +2,13 @@
 
 A handy copy and paste with most of the current HTML elements. Plus my new gulp config and some placeholder assets.
 
-Includes some content so you can see what you typography looks like, which are mostly made from Alan Partridge quotes. Dan. DAN. DAN!
+Includes some content because what is a website without content. For your enjoyment these are Alan Partridge quotes. If you don't know who he is I pity you. Dan. DAN. DAN!
 
 ## Dependencies
 
 You're gonna need gulp-cli `npm install -g gulp-cli`
 
-I've included `jquery` because my tabs script using jquery and to be honest is a website a website without jquery. Don't answer that.
+I've included jQuery because my tabs script uses it and to be honest is a website a website without jQuery? Don't answer that.
 
 ## Installation
 
