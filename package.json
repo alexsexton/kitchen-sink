@@ -1,15 +1,39 @@
 {
+  "name": "kitchen-sink",
+  "version": "1.0.1",
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
   "devDependencies": {
-    "bower": "~1.8.0",
-    "grunt": "~1.0.0",
-    "grunt-contrib-uglify": "~1.0.1",
-    "grunt-contrib-imagemin": "~1.0.1",
-    "grunt-contrib-concat": "~1.0.1",
-    "grunt-contrib-clean": "~1.0.0",
-    "grunt-contrib-copy": "~1.0.0",
-    "grunt-contrib-watch": "~1.0.0",
-    "grunt-modernizr": "~1.0.2",
-    "grunt-sass": "~1.2.0",
-    "grunt-standard": "~2.0.0"
-  }
+    "autoprefixer": "^9.1.5",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.1.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-modernizr": "^3.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-svgmin": "^2.1.0",
+    "gulp-uglify": "^3.0.1",
+    "install": "^0.12.1",
+    "npm": "^6.4.1",
+    "postcss-assets": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexsexton/alexsexton.cc.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Me",
+  "license": "MIT"
 }
