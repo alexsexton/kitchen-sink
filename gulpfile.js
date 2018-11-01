@@ -77,7 +77,7 @@ gulp.task('babel', function () {
     .pipe(gulp.dest(folder.build))
 })
 
-// JavaScript processing - luckily there nowt here to process
+// JavaScript processing
 gulp.task('js', ['babel'], function () {
   var jsbuild = gulp.src([
     folder.src + 'js/plugins/*',

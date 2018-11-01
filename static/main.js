@@ -1,10 +1,8 @@
-/* globals jQuery, */
+/* globals jQuery */
 // This uses JS Standard style formating and pulls in dependencies using =require path/to/script.js
-
 'use strict';
 
 jQuery(function ($) {
-
   // Tabs
   $(document).ready(function () {
     var tabs = $('.tab');
