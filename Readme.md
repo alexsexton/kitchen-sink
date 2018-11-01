@@ -18,8 +18,9 @@ Clone this then run `npm install`
 
 - 1.01 Removed bower and grunt and replaced with gulp. Added open graph and twitter card meta tags and every fucking favion that devices seam to need these days.
 
-- 1.02 Added more input types and srcset attributes to images. Also some additional copy in the content section
+- 1.02 Added more input types and `srcset` attributes to images. Also some additional copy in the content section
 
 ## To do
 
-Check the current spec and add additional elements. I'm thinking video, audio and shit like that.
+- [ ] Check the current spec and add additional elements.
+- [ ] Build out navigation component with some kind of mobile burger icon.
