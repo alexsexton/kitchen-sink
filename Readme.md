@@ -1,8 +1,8 @@
 # Kitchen Sink
 
-A handy copy and paste with most of the current HTML elements.
+A handy copy and paste with most of the current HTML elements. Plus my new gulp config and some placeholder assets.
 
-Includes some content so you can see what you typography looks like, which are mostly made from Alan Partridge quotes. Dan.
+Includes some content so you can see what you typography looks like, which are mostly made from Alan Partridge quotes. Dan. DAN. DAN!
 
 ## Dependencies
 
@@ -14,10 +14,11 @@ I've included `jquery` because my tabs script using jquery and to be honest is a
 
 Clone this then run `npm install`
 
-
 ## Versions
 
 - 1.01 Removed bower and grunt and replaced with gulp. Added open graph and twitter card meta tags and every fucking favion that devices seam to need these days.
+
+- 1.02 Added more input types and srcset attributes to images. Also some additional copy in the content section
 
 ## To do
 
