@@ -1,16 +1,20 @@
 // Resets / Global form styles
 
-input[type=text],
-input[type=search],
-input[type=email],
-input[type=phone],
-input[type=password],
+input:not(
+input[type=button],
+input[type=checkbox],
+input[type=file],
+input[type=input],
+input[type=radio],
+input[type=range],
+input[type=reset],
+input[type=submit]),
 textarea {
   -webkit-appearance:none;
   -moz-appearance:none;
   appearance:none;
   border-radius: 0;
-  border: 2px solid scale-color($input-border, $lightness: 50%);
+  border: $border-size solid scale-color($input-border, $lightness: 50%);
   font-size: $base-font-size;
   padding: 5px;
   margin: 0;
@@ -21,15 +25,23 @@ textarea {
 
 @media screen and (max-width: $small-screen) {
 
-  input[type=text],
-  input[type=search],
-  input[type=email],
-  input[type=phone],
-  input[type=password],
+  input:not(
+  input[type=button],
+  input[type=checkbox],
+  input[type=file],
+  input[type=input],
+  input[type=radio],
+  input[type=range],
+  input[type=reset],
+  input[type=submit]),
   textarea {
     width:100%;
   }
 
+}
+
+input[type=range] {
+  width: 50%;
 }
 
 input[type=file] {
@@ -41,11 +53,15 @@ textarea {
   resize: none;
 }
 
-input[type=text]:focus,
-input[type=search]:focus,
-input[type=email]:focus,
-input[type=phone]:focus,
-input[type=password]:focus,
+input:not(
+input[type=button],
+input[type=checkbox],
+input[type=file],
+input[type=input],
+input[type=radio],
+input[type=reset],
+input[type=range],
+input[type=submit]):focus,
 textarea:focus {
   border: 2px solid $input-border-focus;
 }

@@ -1,7 +1,7 @@
 // Typography
 
-$heading-margin: 1em;
-$flowing-text-margin: 1em;
+$heading-margin: 1rem;
+$flowing-text-margin: 1rem;
 
 // Headings
 
@@ -84,7 +84,7 @@ h6 {
     }
   }
 
-  // Horizontal Rule
+  abbr {}
 
   hr { }
 
@@ -110,25 +110,8 @@ h6 {
 
   a:focus { }
 
-  // Post Images
-  .post-image {
-    width: 33%;
-    margin: $flowing-text-margin;
+}
 
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-    &.align-right {
-      float: right;
-      margin-right: 0;
-    }
-
-    &.align-left {
-      float: left;
-      margin-left: 0;
-    }
-  }
+.section-header {
 
 }

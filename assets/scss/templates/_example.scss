@@ -24,20 +24,19 @@
 // Section Headers
 
 .section-header {
-  border-bottom:1px solid scale-color($border-colour, $lightness: 50%);
-  border-top:1px solid scale-color($border-colour, $lightness: 50%);
-  margin: 30px 0;
+  border-bottom: 5px solid scale-color($border-colour, $lightness: 50%);
+  margin: $margin * 3 0 $margin;
 }
 
 .section-header h1 {
-  margin: 0.5em 0;
+  margin: $margin 0;
 }
 
 // Typography and brand
 
 .typography-and-brand {
 
-  font-size: $base-font-size*2.618;
+  font-size: $base-font-size * 2.618;
 
   .sans p {
     font-family: $font-family-sans;
@@ -79,14 +78,6 @@
       background: $highlight;
     }
   }
-}
-
-.triangle-up:before {
-  @include arrow-up(30px,#000)
-}
-
-.triangle-down:before {
-  @include arrow-down(30px,$highlight)
 }
 
 .grid {
