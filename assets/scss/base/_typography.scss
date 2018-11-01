@@ -1,58 +1,54 @@
 // Typography
 
+$heading-margin: 1em;
+$flowing-text-margin: 1em;
+
 // Headings
-h1 {
-  font-size: $base-font-size*2.618;
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  margin: 0.5em 0 0.75em 0;
+  margin: $heading-margin 0 $heading-margin 0;
+}
+
+h1 {
+  font-size: #{$base-font-size * 2.5};
 }
 
 h2 {
-  font-size: $base-font-size*1.74;
-  font-weight: 600;
-  margin: 0.5em 0 0.75em 0;
+  font-size: #{$base-font-size * 2};
 }
 
 h3 {
-  font-size: $base-font-size*1.618;
-  font-weight: 600;
-  margin: 0.5em 0 0.75em 0;
+  font-size: #{$base-font-size * 1.5};
 }
 
 h4 {
-  font-size: $base-font-size*1.076;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 0.5em 0 0.75em 0;
+  font-size: #{$base-font-size * 1.25};
 }
 
 h5 {
   font-size: $base-font-size;
   text-transform: uppercase;
-  font-weight: 600;
-  margin: 0.5em 0 0.75em 0;
 }
 
 h6 {
   font-size: $base-font-size;
-  font-weight: 600;
-  margin: 0.5em 0 0.75em 0;
 }
 
 .rich-text {
 
   p {
-    margin: 0 0 1em 0;
+    margin: 0 0 $flowing-text-margin 0;
     max-width: 40em;
     -webkit-font-variant-ligatures: discretionary-ligatures;
   }
 
   ul {
-    margin: 0 0 1em 1em;
+    margin: 0 0 $flowing-text-margin $flowing-text-margin;
     li {
       list-style-type: disc;
       ul {
-        margin: 0 0 0 1em;
+        margin: 0 0 0 $flowing-text-margin;
         li {
           list-style-type: circle;
         }
@@ -61,11 +57,11 @@ h6 {
   }
 
   ol {
-    margin: 0 0 1em 1em;
+    margin: 0 0 $flowing-text-margin $flowing-text-margin;
     li {
       list-style-type: decimal;
       ol {
-        margin: 0 0 0 1em;
+        margin: 0 0 0 $flowing-text-margin;
         li {
           list-style-type: lower-latin;
         }
@@ -74,8 +70,8 @@ h6 {
   }
 
   blockquote {
-    padding: 0 0 0 2em;
-    margin: 0 0 1em 0;
+    padding: 0 0 0 $flowing-text-margin;
+    margin: 0 0 $flowing-text-margin 0;
     max-width: 40em;
     border-left: 4px solid scale-color($base-font-colour, $lightness: 50%);
 
@@ -113,5 +109,26 @@ h6 {
   }
 
   a:focus { }
+
+  // Post Images
+  .post-image {
+    width: 33%;
+    margin: $flowing-text-margin;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &.align-right {
+      float: right;
+      margin-right: 0;
+    }
+
+    &.align-left {
+      float: left;
+      margin-left: 0;
+    }
+  }
 
 }

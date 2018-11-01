@@ -1,3 +1,65 @@
+// Media Queries
+
+@mixin tiny-screen-max {
+  @media screen and (max-width: $tiny-screen) {
+    @content;
+  }
+}
+
+@mixin tiny-screen-min {
+  @media screen and (min-width: $tiny-screen) {
+    @content;
+  }
+}
+
+@mixin small-screen-max {
+  @media screen and (max-width: $small-screen) {
+    @content;
+  }
+}
+
+@mixin small-screen-min {
+  @media screen and (min-width: $small-screen) {
+    @content;
+  }
+}
+
+@mixin medium-screen-max {
+  @media screen and (max-width: $medium-screen) {
+    @content;
+  }
+}
+
+@mixin medium-screen-min {
+  @media screen and (min-width: $medium-screen) {
+    @content;
+  }
+}
+
+@mixin large-screen-max {
+  @media screen and (max-width: $large-screen) {
+    @content;
+  }
+}
+
+@mixin large-screen-min {
+  @media screen and (min-width: $large-screen) {
+    @content;
+  }
+}
+
+// Group / AKA Clearfix
+@mixin group {
+  @content;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 // Rem/PX
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;

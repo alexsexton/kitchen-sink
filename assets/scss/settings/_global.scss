@@ -29,7 +29,7 @@ $error: #df3034;
 
 // Base Site
 $base-font-colour: #222;
-$body-bg: #fff;
+$body-background: #fff;
 $light-grey: #f8f8f8;
 $medium-grey: #c8c8c8;
 $dark-grey: #6f777b;
@@ -52,10 +52,11 @@ $input-border: $dark-grey;
 $input-border-focus: $highlight;
 
 // Typography
-$system-font-family-sans: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", Sans-Serif;
 // Use system-font-family for iOS/ Android devices. Listed are: Apple iOS system font, iOS San Francisco, Apple San Francisco, Android, Windows Phone;
-$font-family-sans: "nta", $system-font-family-sans;
-$font-family-serif: "Georgia", Times,Serif;
+$system-font-family-sans: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", Sans-Serif;
+
+$font-family-sans: $system-font-family-sans;
+$font-family-serif: "Georgia", Times, Serif;
 $base-sans: $font-family-sans;
 $base-font-size: 19px;
 $base-line-height: 1.4;

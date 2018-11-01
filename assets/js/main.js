@@ -1,18 +1,19 @@
 /* globals jQuery, */
-// Please, please comment your JS. Not everyone knows it as well as you.
+// This uses JS Standard style formating and pulls in dependencies using =require path/to/script.js
 
 'use strict'
 
 jQuery(function ($) {
+
   // Tabs
   $(document).ready(function () {
     var tabs = $('.tab')
     tabs.hide().filter(':first').attr('aria-hidden', 'true').show()
 
-    $('.tabs ul a').click(function () {
+    $('.tabs li a').click(function () {
       tabs.hide().attr('aria-hidden', 'true')
       tabs.filter(this.hash).attr('aria-hidden', 'false').show()
-      $('.tabs ul a').removeClass('selected').attr('aria-expanded', 'false')
+      $('.tabs li a').removeClass('selected').attr('aria-expanded', 'false')
       $(this).addClass('selected').attr('aria-expanded', 'true')
       return false
     }).filter(':first').click().attr('aria-expanded', 'true')
@@ -26,23 +27,5 @@ jQuery(function ($) {
     })
   })
 
-  // FitVids
-  $(document).ready(function () {
-    $('.video-frame').fitVids()
-  })
-
-  // Navigation
-  $(document).ready(function () {
-    $('#js-main-navigation').accessibleMegaMenu({
-      uuidPrefix: 'accessible-nav',
-      menuClass: 'nav-menu',
-      topNavItemClass: 'nav-item',
-      panelClass: 'sub-nav',
-      panelGroupClass: 'sub-nav-group',
-      hoverClass: 'hover',
-      focusClass: 'focus',
-      openClass: 'open'
-    })
-  })
 // End
 })

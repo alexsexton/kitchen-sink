@@ -1,11 +1,13 @@
 // Grid Mixins
 
 $grid-wrapper: $site-max-width;
-$grid-gutters: 30px;
-
+$grid-gutters: $site-gutters;
 
 // Row
 @mixin row($inside: false) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   @if($inside == true) {
     margin-left: -$grid-gutters/2;
     margin-right: -$grid-gutters/2;
@@ -25,10 +27,9 @@ $grid-gutters: 30px;
   }
 }
 
-
 // Column
 @mixin col($width: 1, $padding: true) {
-  float: left;
+  // float: left;
   width: percentage($width);
   @if($padding == true) {
     padding-left: $grid-gutters/2;

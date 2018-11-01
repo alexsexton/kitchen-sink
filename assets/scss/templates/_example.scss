@@ -88,3 +88,54 @@
 .triangle-down:before {
   @include arrow-down(30px,$highlight)
 }
+
+.grid {
+  @include row(true);
+
+  > div {
+    height: 100px;
+    background: $pink-25;
+    background-clip: content-box;
+    margin-bottom: $margin;
+  }
+
+  .column-full {
+    @include col(1);
+  }
+
+  .column-half {
+    @include col(1/2);
+  }
+
+  .column-third {
+    @include col(1/3);
+  }
+
+  .column-two-thirds {
+    @include col(2/3);
+  }
+
+  .column-quarter {
+    @include col(1/4);
+  }
+
+  .column-three-quarters {
+    @include col(3/4);
+  }
+
+  .column-fifth {
+    @include col(1/5);
+  }
+
+  .column-two-fifths {
+    @include col(2/5);
+  }
+
+  .column-three-fifths {
+    @include col(3/5);
+  }
+
+  .column-four-fifths {
+    @include col(4/5);
+  }
+}
