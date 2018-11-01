@@ -30,7 +30,7 @@ var folder = {
 
 // image processing
 gulp.task('images', function () {
-  var out = folder.build
+  var out = folder.build + 'images/'
   return gulp.src(folder.src + 'images/*')
     .pipe(newer(out))
     .pipe(imagemin({ optimizationLevel: 5 }))
@@ -39,10 +39,10 @@ gulp.task('images', function () {
 
 // SVG min
 gulp.task('svgmin', function () {
-  var out = folder.build
+  var out = folder.build + 'images/'
   return gulp.src(folder.src + 'images/*')
     .pipe(svgmin())
-    .pipe(gulp.dest(out + 'images'))
+    .pipe(gulp.dest(out))
 })
 
 // CSS processing
@@ -99,7 +99,7 @@ gulp.task('js', ['babel'], function () {
 gulp.task('run', ['images', 'css', 'babel', 'js'])
 
 // watch for changes
-gulp.task('watch', function () {
+gulp.task('watch', ['run'], function () {
   // image changes
   gulp.watch(folder.src + 'images/**/*', ['images'])
   // javascript changes
