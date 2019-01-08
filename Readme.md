@@ -2,7 +2,7 @@
 
 A handy copy and paste with most of the current HTML elements. Plus my new gulp config and some placeholder assets.
 
-Includes some content because what is a website without content. For your enjoyment these are Alan Partridge quotes. If you don't know who he is I pity you. Dan. DAN. DAN!
+Includes some content because what is a website without content. For your enjoyment these are Alan Partridge quotes. 
 
 ## Dependencies
 
