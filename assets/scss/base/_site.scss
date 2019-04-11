@@ -22,3 +22,7 @@ body {
 .group {
   @include group;
 }
+
+.hide {
+  @include hide;
+}

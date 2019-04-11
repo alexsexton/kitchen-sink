@@ -3,18 +3,19 @@
 'use strict';
 
 jQuery(function ($) {
-  // Tabs
+
   $(document).ready(function () {
+    // Tabs
     var tabs = $('.tab');
-    tabs.hide().filter(':first').attr('aria-hidden', 'true').show();
+    tabs.addClass('hide').addClass('hide').filter(':first').attr('aria-hidden', 'true').removeClass('hide');
 
     $('.tabs li a').click(function () {
-      tabs.hide().attr('aria-hidden', 'true');
-      tabs.filter(this.hash).attr('aria-hidden', 'false').show();
+      tabs.addClass('hide').attr('aria-hidden', 'true');
+      tabs.filter(this.hash).attr('aria-hidden', 'false').removeClass('hide');
       $('.tabs li a').removeClass('selected').attr('aria-expanded', 'false');
       $(this).addClass('selected').attr('aria-expanded', 'true');
       return false;
-    }).filter(':first').click().attr('aria-expanded', 'true');
+    }).filter(':first').click().attr('aria-expanded', 'true').removeClass('hide');
   });
 
   // Add selected class and aria roles to checked input labels
