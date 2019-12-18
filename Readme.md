@@ -20,8 +20,8 @@ Clone this then run `npm install`
 
 - 1.02 Added more input types and `srcset` attributes to images. Also some additional copy in the content section
 
-## To do
+- 1.03 Added `picture` and `video` elements. Updated build tools to use Gulp4
 
-- [ ] Update gulp to newest version 
-- [ ] Check the current spec and add additional elements.
-- [ ] Build out navigation component
+## Todo
+
+- [ ] Refactor tabs script to work with (vanilla) JS
