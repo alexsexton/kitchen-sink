@@ -161,7 +161,7 @@
           </ul>
         </article>
 
-        <article class="typogrpahy sans">
+        <article class="typography sans">
           <h2>Sans Typeface</h2>
           <p>Aa Bb Cc Dd Ee Fe Gg Hh Ii Jj Kk Ll Mn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
           <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -170,7 +170,7 @@
           <p>:// @ _ - "" '' ! ? ~ % &amp; () []</p>
         </article>
 
-        <article class="typogrpahy serif">
+        <article class="typography serif">
           <h2>Serif Typeface</h2>
           <p>Aa Bb Cc Dd Ee Fe Gg Hh Ii Jj Kk Ll Mn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
           <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -267,6 +267,12 @@
             <p>Just a placeholder image</p>
           </figcaption>
         </figure>
+
+        <picture>
+          <source srcset="static/images/placeholder-square-400w.png"
+            media="(max-width: 480px) 440px">
+          <img src="static/images/placeholder-square-800w.png">
+        </picture>
       </section>
 
       <section class="content group">
@@ -529,7 +535,6 @@
 
       </section>
 
-
       <section class="video">
 
         <header class="section-header">
@@ -546,6 +551,14 @@
 
         <div class="video-frame">
           <iframe src="https://www.youtube.com/embed/zUNrUqMwUkY" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+
+        <h2>Video Tag</h2>
+
+        <div class="video-frame">
+          <video controls muted src="https://interactive-examples.mdn.mozilla.net/media/examples/stream_of_water.webm" width="300" height="200" type="video/webm">
+            Sorry, your browser doesn't support embedded videos.
+          </video>
         </div>
 
       </section>
