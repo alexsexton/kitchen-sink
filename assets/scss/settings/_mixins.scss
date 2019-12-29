@@ -1,0 +1,355 @@
+// Media Queries
+
+@mixin tiny-screen-max {
+  @media screen and (max-width: $tiny-screen) {
+    @content;
+  }
+}
+
+@mixin tiny-screen-min {
+  @media screen and (min-width: $tiny-screen) {
+    @content;
+  }
+}
+
+@mixin small-screen-max {
+  @media screen and (max-width: $small-screen) {
+    @content;
+  }
+}
+
+@mixin small-screen-min {
+  @media screen and (min-width: $small-screen) {
+    @content;
+  }
+}
+
+@mixin medium-screen-max {
+  @media screen and (max-width: $medium-screen) {
+    @content;
+  }
+}
+
+@mixin medium-screen-min {
+  @media screen and (min-width: $medium-screen) {
+    @content;
+  }
+}
+
+@mixin large-screen-max {
+  @media screen and (max-width: $large-screen) {
+    @content;
+  }
+}
+
+@mixin large-screen-min {
+  @media screen and (min-width: $large-screen) {
+    @content;
+  }
+}
+
+// Group / AKA Clearfix
+@mixin group {
+  @content;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Percentage Function
+// Use like this
+// div {width: pc(500,1280);}
+
+@function pc($wanted, $parent) {
+  @return #{($wanted / $parent) * 100 + '%'};
+}
+
+@mixin image {
+  display: block;
+  width: 100%;
+}
+
+@mixin focus {
+  outline: 2px solid $highlight;
+  background-color: transparent;
+}
+
+@mixin conceal {
+  display: none;
+  visibility: hidden;
+}
+
+@mixin disclose {
+  display: block;
+  visibility: visible;
+}
+
+@mixin hide {
+  position: absolute;
+  left: -9999em;
+}
+
+@mixin show {
+  position: static;
+  left: inherit;
+}
+
+@mixin svg-icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+}
+
+@mixin svg-icon-big {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+}
+
+@mixin img-box-shadow {
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+@mixin img-box-shadow-hover {
+  box-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+
+@mixin fullscreen ($background) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  background: $background;
+  opacity: 1;
+  z-index: 10;
+  transform: translate(0px, 0px) scale(1, 1);
+}
+
+// Use these two togther
+@mixin contract {
+  transition: all 0.2s ease-in-out;
+  transform: translate(0px, -100%) scale(0, 0);
+  opacity: 0;
+}
+
+@mixin expand {
+  transform: translate(0px, 0px) scale(1, 1);
+  opacity: 1;
+}
+
+@mixin close-this {
+  cursor: pointer;
+  color: $white;
+  position: absolute;
+  top: $margin;
+  right: $margin;
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin transition ($property) {
+  -webkit-transition: $property 0.2s ease-in-out;
+  -moz-transition: $property 0.2s ease-in-out;
+  transition: $property 0.2s ease-in-out;
+}
+
+@mixin filter ($type, $value) {
+  -webkit-filter: $type($value);
+  -moz-filter: $type($value);
+  -o-filter: $type($value);
+  -ms-filter: $type($value);
+  filter: $type($value);
+}
+
+@mixin input {
+  appearance: none;
+  border-radius: 0;
+  border: $form-input-border-width solid $form-input-border-colour;
+  box-sizing: border-box;
+  color: $base-font-colour;
+  font-family: inherit;
+  font-size: $base-font-size;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: $form-input-padding;
+  transition: all $trans-time ease-in-out;
+  vertical-align: middle;
+
+  &:focus {
+    border-color: $form-input-border-colour-focus;
+    outline: none;
+  }
+}
+
+@mixin button($background, $colour) {
+  appearance: none;
+  background: $background;
+  border: 0;
+  border-radius: $border-radius;
+  color: $colour;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: $base-font-size;
+  font-weight: normal;
+  margin: 0;
+  padding: $spacer $spacer * 2;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    background: $colour;
+    color: $background;
+  }
+}
+
+@mixin button-small($background, $colour) {
+  appearance: none;
+  background: $background;
+  border: 0;
+  color: $colour;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: $small-font-size;
+  font-weight: normal;
+  margin: 0;
+  padding: $spacer / 2 $spacer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover, &:focus {
+    background: lighten($background, 25%);
+  }
+}
+
+@mixin button-icon($background, $colour) {
+  appearance: none;
+  background: $background;
+  border-radius: $border-radius;
+  border: 0;
+  color: $colour;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: $base-font-size;
+  font-weight: $bold;
+  margin: 0;
+  padding: $spacer;
+  text-decoration: none;
+  line-height: 0;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+
+  svg {
+    fill: $colour !important;
+    stroke: $colour !important;
+  }
+
+  &:hover, &:focus {
+    background: lighten($background, 5%);
+  }
+}
+
+@mixin button-small-footer($background, $colour) {
+  appearance: none;
+  background: $background;
+  border: 2px solid $background;
+  color: $colour;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: $small-font-size;
+  font-weight: normal;
+  margin: 0;
+  padding: #{ ($spacer / 2) + 0.4 } $spacer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover, &:focus {
+    background: $colour;
+    border: 2px solid $background;
+    color: $background;
+  }
+}
+
+@mixin ghost-button ($border-colour, $text-colour, $text-colour-hover) {
+  appearance: none;
+  background: transparent;
+  border: 2px solid $border-colour;
+  color: $text-colour;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: $base-font-size;
+  font-weight: normal;
+  margin: 0;
+  padding: $spacer $spacer * 2;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover, &:focus {
+    background: $border-colour;
+    border: 2px solid $border-colour;
+    color: $text-colour-hover;
+  }
+}
+
+@mixin reverse-ghost-button ($border-colour, $text-colour, $text-colour-hover) {
+  appearance: none;
+  background: $border-colour;
+  border: 2px solid $border-colour;
+  color: $text-colour-hover;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: $base-font-size;
+  font-weight: normal;
+  margin: 0;
+  padding: $spacer $spacer * 2;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover, &:focus {
+    background: transparent;
+    border: 2px solid $border-colour;
+    color: $text-colour;
+  }
+}
+
+@mixin overlay {
+  background-color: $overlay-background;
+  height: 100vh;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: $spacer2 $small-site-gutters;
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  z-index: 20;
+}
+
+@mixin overlay-open {
+  -webkit-overflow-scrolling: touch;
+  top: 0;
+  transform: translateY(0);
+}

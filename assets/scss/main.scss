@@ -2,9 +2,7 @@
 
 @import "settings/colours";
 @import "settings/global";
-
-@import "helpers/mixins";
-@import "helpers/grid";
+@import "settings/mixins";
 
 @import "base/reset";
 @import "base/typography";
@@ -24,10 +22,5 @@
 @import "templates/home";
 @import "templates/pages";
 @import "templates/blog";
-
-// Shopify specific
-// @import "templatess/category";
-// @import "templatess/product-list";
-// @import "templatess/product-detail";
 
 @import "base/ie";
