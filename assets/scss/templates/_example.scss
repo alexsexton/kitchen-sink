@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+
   img {
     width: 100%;
     height: auto;
@@ -7,22 +8,22 @@
 
   .hero-caption {
     position: absolute;
-    bottom:30px;
+    bottom: 30px;
     left: 30px;
     background: $black;
     padding: 15px;
     color: $light-grey;
+
     h2 {
       margin: 0;
     }
+
     a {
       color: $link-colour;
     }
   }
 }
-
 // Section Headers
-
 .section-header {
   border-bottom: 5px solid scale-color($border-colour, $lightness: 50%);
   margin: $margin * 3 0 $margin;
@@ -31,11 +32,8 @@
 .section-header h1 {
   margin: $margin 0;
 }
-
 // Typography and brand
-
 .typography-and-brand {
-
   font-size: $base-font-size * 2.618;
 
   .sans p {
@@ -47,7 +45,6 @@
   }
 
   .colours {
-
     li {
       text-indent: -9999em;
       height: 100px;
@@ -77,56 +74,5 @@
     .hightlight {
       background: $highlight;
     }
-  }
-}
-
-.grid {
-  @include row(true);
-
-  > div {
-    height: 100px;
-    background: $pink-25;
-    background-clip: content-box;
-    margin-bottom: $margin;
-  }
-
-  .column-full {
-    @include col(1);
-  }
-
-  .column-half {
-    @include col(1/2);
-  }
-
-  .column-third {
-    @include col(1/3);
-  }
-
-  .column-two-thirds {
-    @include col(2/3);
-  }
-
-  .column-quarter {
-    @include col(1/4);
-  }
-
-  .column-three-quarters {
-    @include col(3/4);
-  }
-
-  .column-fifth {
-    @include col(1/5);
-  }
-
-  .column-two-fifths {
-    @include col(2/5);
-  }
-
-  .column-three-fifths {
-    @include col(3/5);
-  }
-
-  .column-four-fifths {
-    @include col(4/5);
   }
 }

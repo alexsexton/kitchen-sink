@@ -2,6 +2,20 @@
 $imagePath: "/images";
 $fontPath: "/fonts";
 
+// Spacers
+$spacer: 1rem;
+$halfspacer: $spacer / 2;
+$spacer2: $spacer * 2;
+$spacer3: $spacer * 3;
+$spacer4: $spacer * 4;
+$spacer5: $spacer * 5;
+$spacer6: $spacer * 6;
+$spacer7: $spacer * 7;
+$spacer8: $spacer * 8;
+$spacer9: $spacer * 9;
+$spacer10: $spacer * 10;
+$spacer15: $spacer * 15;
+
 // Site Width
 $site-max-width: 1020px;
 $site-gutters: 30px;
@@ -13,8 +27,8 @@ $small-screen: 780px;
 $tiny-screen: 480px;
 
 // Margins & Padding
-$margin: 30px;
-$padding: 30px;
+$margin: $spacer;
+$padding: $spacer;
 
 // Colours
 

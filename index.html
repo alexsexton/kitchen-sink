@@ -21,7 +21,7 @@
   <link rel="prefetch" href="#">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="static/main.css" media="screen">
+  <link rel="stylesheet" href="static/styles.css" media="screen">
 
   <!-- Open Graph -->
   <meta property="og:locale" content="">
@@ -57,75 +57,70 @@
   <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
   <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
 
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-XXXXXXXX-X', 'auto');
-  ga('send', 'pageview');
-  </script>
-
+  <script src="static/modernizr.min.js"></script>
 </head>
 
 <body>
 
   <header class="header group" role="banner">
 
-      <div class="logo">Logo</div>
+    <div class="logo">Logo</div>
 
-      <nav id="js-main-navigation" class="main-navigation" role="navigation">
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="#">About</a>
-            <div class="sub-nav">
-              <ul class="sub-nav-group">
-                <li><a href="#">Accessibility</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Diversity</a></li>
-                <li><a href="#">Governance</a></li>
-              </ul>
-              <ul class="sub-nav-group">
-                <li><a href="#">Leadership</a></li>
-                <li><a href="#">Mission Statement</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Teaching</a></li>
-              </ul>
-              <ul class="sub-nav-group">
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="#">Academics</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">Admissions</a>
-            <div class="sub-nav">
-              <ul class="sub-nav-group hover">
-                <li><a href="#">Undergraduate</a></li>
-                <li><a href="#">Tuition</a></li>
-                <li><a href="#">Financial Aid</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="#">Visitors</a>
-            <div class="sub-nav">
-              <ul class="sub-nav-group">
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Campus Map</a></li>
-                <li><a href="#">Parking</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
+    <nav id="js-main-navigation" class="main-navigation" role="navigation">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#">About</a>
+          <div class="sub-nav">
+            <ul class="sub-nav-group">
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Admissions</a></li>
+              <li><a href="#">Diversity</a></li>
+              <li><a href="#">Governance</a></li>
+            </ul>
+            <ul class="sub-nav-group">
+              <li><a href="#">Leadership</a></li>
+              <li><a href="#">Mission Statement</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Teaching</a></li>
+            </ul>
+            <ul class="sub-nav-group">
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#">Academics</a>
+        </li>
+        <li class="nav-item">
+          <a href="#">Admissions</a>
+          <div class="sub-nav">
+            <ul class="sub-nav-group hover">
+              <li><a href="#">Undergraduate</a></li>
+              <li><a href="#">Tuition</a></li>
+              <li><a href="#">Financial Aid</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#">Visitors</a>
+          <div class="sub-nav">
+            <ul class="sub-nav-group">
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Campus Map</a></li>
+              <li><a href="#">Parking</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="search">
-        <form role="search" action="/">
-          <label for="search">Find something</label>
-          <input type="search" name="search" id="search" placeholder="enter some keywords">
-          <input type="submit" value="Find" class="button">
-        </form>
-      </div>
+    <div class="search">
+      <form role="search" action="/">
+        <label for="search">Find something</label>
+        <input type="search" name="search" id="search" placeholder="enter some keywords">
+        <input type="submit" value="Find" class="button">
+      </form>
+    </div>
 
   </header>
 
@@ -145,478 +140,421 @@
 
     </section>
 
-      <section class="typography-and-brand group">
-        <header class="section-header">
-          <h1>Typography and Branding</h1>
-        </header>
-
-        <article class="brand colours group">
-          <h2>Colours</h2>
-          <ul>
-            <li class="primary">Brand Primary</li>
-            <li class="secondary">Brand Secondary</li>
-            <li class="tertiary">Brand Tertiary</li>
-            <li class="error">Brand Error</li>
-            <li class="hightlight">Brand Focus</li>
-          </ul>
-        </article>
-
-        <article class="typography sans">
-          <h2>Sans Typeface</h2>
-          <p>Aa Bb Cc Dd Ee Fe Gg Hh Ii Jj Kk Ll Mn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
-          <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-          <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-          <p>0 1 2 3 4 5 6 7 8 9</p>
-          <p>:// @ _ - "" '' ! ? ~ % &amp; () []</p>
-        </article>
-
-        <article class="typography serif">
-          <h2>Serif Typeface</h2>
-          <p>Aa Bb Cc Dd Ee Fe Gg Hh Ii Jj Kk Ll Mn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
-          <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-          <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-          <p>0 1 2 3 4 5 6 7 8 9</p>
-          <p>:// @ _ - "" '' ! ? ~ % &amp; () []</p>
-        </article>
-
-      </section>
-
-      <section class="content">
-        <header class="section-header">
-          <h1>Content</h1>
-        </header>
-
-        <article class="rich-text">
-          <h1>Heading Level 1</h1>
-          <h2>Heading Level 2</h2>
-          <h3>Heading Level 3</h3>
-          <h4>Heading Level 4</h4>
-          <h5>Heading Level 5</h5>
-          <h6>Heading Level 6</h6>
-
-          <p>I know lying is wrong, but if the <b>elephant man</b> came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he's depressed and has respiratory problems — would you say "go and take that <del>lipstick</del> <ins>blusher</ins> off you mis-shapen headed elephant tranny"? No. You'd say "You look nice...John"</p>
-
-          <p>A detective series for the <abbr title="British Broadcasting Corporation">BBC</abbr> based in Norwich called "Swallow". Swallow is a detective who tackles vandalism. Bit of a maverick, not afraid to break the law if he thinks it's necessary. He's not a criminal, you know, but he will, perhaps, travel 80mph on the motorway if, for example, he wants to get somewhere quickly...Think about it. No one had heard of Oxford before Inspector Morse.</p>
-
-          <blockquote>
-            <p>He's not a criminal, but he will, perhaps, travel 80mph on the motorway if he, for example, he wants to get somewhere quickly...</p>
-            <cite>Alan Partridge</cite>
-          </blockquote>
-
-          <ul>
-            <li>Tom</li>
-            <li>Dick
-              <ul>
-                <li>Richard</li>
-                <li>Rich</li>
-                <li>Richie</li>
-              </ul>
-            </li>
-            <li><a href="#">Harry</a></li>
-          </ul>
-
-          <ol>
-            <li>Tom</li>
-            <li>Dick
-              <ol>
-                <li>Richard</li>
-                <li>Rich</li>
-                <li>Richie</li>
-              </ol>
-            </li>
-            <li>Harry</li>
-          </ol>
-
-          <hr>
-
-          <details>
-            <summary>I’m 47, my girlfriend's 33; she's 14 years younger than me. </summary>
-            Back of the net!
-          </details>
-
-          <h1>Temperature</h1>
-          <p>The temperature inside this apple pie is over one <u>thousand degrees</u>. If I squeeze it, a jet of molten bramley apple will squirt out. Could go your way; could go mine. Either way, one of us is going down.</p>
-
-          <h2>Oooh scary</h2>
-          <p>Oooh scary Irish men. Would you like to recruit me? I like your berets. They're worn by Saddam Hussain, Frank Spencer, the French.</p>
-
-          <h3>Minor criticism</h3>
-          <p>Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that's my decision. Use the sausage as a breakwater....but that's nitpicking, on the whole a very good effort...Seven on ten. Let's make love.</p>
-
-          <h4>Go to London</h4>
-          <p>Go to London, I guarantee you'll either be mugged or not appreciated. Catch the train to London, stopping at Rejection, <strong>Disappointment</strong>, Backstabbing Central and Shattered Dreams Parkway.</p>
-
-          <h5>Lying</h5>
-          <p>I know lying is wrong, but if the <a href="#">elephant man</a> came in now in a blouse with some make up on, and said 'How do I look?' Would you say, bearing in mind he's depressed and has respiratory problems, would you say 'Go and take that blusher off you mis-shapened elephant tranny'? No. You'd say 'You look nice... John'.</p>
-
-          <h6>Quick tip</h6>
-          <p>Quick tip for yourself. If you're ever doing an after-dinner speech, you say 'My Lords, Ladies and Gentlemen, sorry I'm late, <i>I just popped to the toilet</i>. And while I was there, I saw some graffiti and it said 'I used to be indecisive, but now I'm not so sure.' Straight away you've got them by the jaffas.</p>
-
-        </article>
-
-      </section>
-
-      <section>
-        <header class="section-header">
-          <h1>Images</h1>
-        </header>
-
-        <figure>
-          <img srcset="static/images/placeholder-square-400w.png 480w" sizes="(max-width: 480px) 440px" src="static/images/placeholder-square-800w.png" alt="Placeholder image">
-          <figcaption>
-            <p>Just a placeholder image</p>
-          </figcaption>
-        </figure>
-
-        <picture>
-          <source srcset="static/images/placeholder-square-400w.png"
-            media="(max-width: 480px) 440px">
-          <img src="static/images/placeholder-square-800w.png">
-        </picture>
-      </section>
-
-      <section class="content group">
-
-        <header class="section-header">
-          <h1>Content with a sidebar</h1>
-        </header>
-
-        <article class="main-content rich-text">
-          <h2>Elephant Man</h2>
-          <p>I know lying is wrong, but if the elephant man came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he's depressed and has respiratory problems — would you say "go and take that blusher off you mis-shapen headed elephant tranny"? No. You'd say "You look nice...John"</p>
-
-          <h3>Minor criticism</h3>
-          <p>Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that's my decision. Use the sausage as a breakwater...but that's nitpicking, on the whole a very good effort...Seven on ten. Let's make love.</p>
-        </article>
-
-        <aside class="sidebar" role="complementary">
-          <h3>Sidebar</h3>
-          <ul>
-            <li><a href="#">Complementary Link 1</a></li>
-            <li><a href="#">Complementary Link 2</a></li>
-            <li><a href="#">Complementary Link 3</a></li>
-            <li><a href="#">Complementary Link 4</a></li>
-          </ul>
-        </aside>
-
-      </section>
-
-      <section class="tablular-data">
-
-        <header class="section-header">
-          <h1>Tabular Data</h1>
-        </header>
-
-        <table>
-          <caption>The Best Victoria Sponge</caption>
-          <colgroup>
-            <col style=""></col>
-            <col style=""></col>
-            <col style=""></col>
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope="col">Ingredients</th><th scope="col">Serves Four</th><th scope="col">Serves More</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Caster Sugar</td><td>200g</td><td>400g</td>
-            </tr>
-            <tr>
-              <td>Softened Butter</td><td>200g</td><td>400g</td>
-            </tr>
-            <tr>
-              <td>Eggs - Beaten</td><td>4</td><td>8</td>
-            </tr>
-            <tr>
-              <td>Self-raising Flour</td><td>200g</td><td>400g</td>
-            </tr>
-            <tr>
-              <td>Baking Powder</td><td>1 <abbr title="Tea Spoon">tsp</abbr></td><td>2 tsp</td>
-            </tr>
-            <tr>
-              <td>Milk</td><td>2 tbsp</td><td>4 tbsp</td>
-            </tr>
-          </tbody>
-        </table>
-
-      </section>
-
-      <section class="forms">
-
-        <header class="section-header">
-          <h1>Forms</h1>
-          <!-- note that we're not using placeholder attributes since they aren't especially accessible -->
-        </header>
-
-        <form class="data-collection" action="">
-          <div class="form-group">
-            <label for="text-input">Label for text <span class="required">Required</span>
-              <em class="hint">Hint text for the input below</em>
-            </label>
-            <input type="text" name="text-input" required>
-          </div>
-
-          <div class="form-group form-error">
-            <label for="text-input">Label for error <span class="error-msg">This is required</span></label>
-            <input type="text" name="text-input" required>
-          </div>
-
-          <div class="form-group">
-            <label for="search-input">Label for search</label>
-            <input type="search" name="search-input">
-          </div>
-
-          <div class="form-group">
-            <label for="tel-input">Label for telephone</label>
-            <input type="tel" name="tel-input" placeholder="0208-123-1234" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
-          </div>
-
-          <div class="form-group">
-            <label for="email-input">Label for Email</label>
-            <input type="email" name="email-input" autocapitalize="none">
-          </div>
-
-          <div class="form-group">
-            <label for="password-input">Label for password</label>
-            <input type="password" name="password-input" autocapitalize="none">
-          </div>
-
-          <div class="form-group">
-            <label for="url-input">Label for URL</label>
-            <input type="url" name="url-input">
-          </div>
-
-          <div class="form-group">
-            <label for="color-input">Label for color</label>
-            <input type="color" name="color-input" value="#ff0000">
-          </div>
-
-          <div class="form-group">
-            <label for="range-input">Label for range</label>
-            <input type="range" name="range-input" min="0" max="100" value="50">
-          </div>
-
-          <div class="form-group">
-            <label for="number-input">Label for number</label>
-            <input type="number" name="number-input">
-          </div>
-
-          <div class="form-group">
-            <label for="time-input">Label for time</label>
-            <input type="time" name="time-input">
-          </div>
-
-          <div class="form-group">
-            <label for="date-input">Label for date</label>
-            <input type="date" name="date-input">
-          </div>
-
-          <div class="form-group">
-            <label for="datetime-local-input">Label for datetime local</label>
-            <input type="datetime-local" name="datetime-local-input">
-          </div>
-
-          <div class="form-group">
-            <label for="week-input">Label for week</label>
-            <input type="week" name="week-input">
-          </div>
-
-          <div class="form-group">
-            <label for="month-input">Label for month</label>
-            <input type="month" name="month-input">
-          </div>
-
-          <div class="form-group">
-            <label for="file-input">Label for file</label>
-            <input type="file" name="file-input">
-          </div>
-
-          <div class="form-group">
-            <label for="textarea">Label for textarea</label>
-            <textarea type="textarea" rows="10" cols="80"></textarea>
-          </div>
-
-          <!-- Remember that radios and checkboxes probably need a legend element for context, so use a fieldset inside the containing "form-group" element -->
-
-          <div class="form-group">
-            <fieldset class="inline-labels">
-              <legend>Do you live here?</legend>
-              <label for="radio-one" class="radio-group" role="radio">
-                <input type="radio" id="radio-one" name="radio-inline-group" value="Yes">
-                Yes
-              </label>
-              <label for="radio-two" class="radio-group" role="radio">
-                <input type="radio" id="radio-two" name="radio-inline-group" value="No">
-                No
-              </label>
-            </fieldset>
-          </div>
-
-          <div class="form-group">
-            <fieldset class="block-labels">
-              <legend>Pick one type of sweet treat</legend>
-              <label for="radio-brownies" class="radio-group" role="radio">
-                <input type="radio" id="radio-brownies" name="radio-block-group" value="Brownie">
-                Peanut butter and dark chocolate brownies
-              </label>
-              <label for="radio-flapjacks" class="radio-group" role="radio">
-                <input type="radio" id="radio-flapjacks" name="radio-block-group" value="flapjack">
-                Sultana and nut flapjacks
-              </label>
-              <label for="radio-fingers" class="radio-group" role="radio">
-                <input type="radio" id="radio-fingers" name="radio-block-group" value="sponge">
-                Sponge fingers
-              </label>
-            </fieldset>
-          </div>
-
-          <div class="form-group">
-            <fieldset class="inline-labels">
-              <legend>Cake or tea or both?</legend>
-              <label for="checkbox-one" class="checkbox-group">
-                <input type="checkbox" id="checkbox-one" name="checkbox-inline-group" value="I like cake">
-                I like cake
-              </label>
-              <label for="checkbox-two" class="checkbox-group">
-                <input type="checkbox" id="checkbox-two" name="checkbox-inline-group" value="I like tea">
-                I like tea
-              </label>
-            </fieldset>
-          </div>
-
-          <div class="form-group">
-            <fieldset class="block-labels">
-              <legend>Favourite thing to do on a Sunday?</legend>
-              <label for="checkbox-walks" class="checkbox-group">
-                <input type="checkbox" id="checkbox-walks" name="checkbox-block-group" value="I like long walks in the country">
-                I like long walks in the country
-              </label>
-              <label for="checkbox-fire" class="checkbox-group">
-                <input type="checkbox" id="checkbox-fire" name="checkbox-block-group" value="I like a cosy pub with a roaring log fire">
-                I like a cosy pub with a roaring log fire
-              </label>
-              <label for="checkbox-roast" class="checkbox-group">
-                <input type="checkbox" id="checkbox-roast" name="checkbox-block-group" value="I like a roast dinner with all the trimmings and a pint of IPA">
-                I like a roast dinner with all the trimmings and a pint of IPA
-              </label>
-            </fieldset>
-          </div>
-
-          <div class="form-buttons">
-            <input type="submit" value="Submit" class="button button-submit">
-            <input type="reset" value="Reset" class="button button-reset">
-            <input type="button" value="Button (Disabled)" class="button button-disabled" disabled="disabled">
-            <button class="button">Button</button>
-          </div>
-        </form>
-
-      </section>
-
-      <section class="tabs">
-
-        <header class="section-header">
-          <h1>Tabs</h1>
-        </header>
-
-        <ul>
-          <li><a href="#tab-one" aria-controls="tab-one" aria-expanded="true">Tab One</a></li>
-          <li><a href="#tab-two" aria-controls="tab-two" aria-expanded="false">Tab Two</a></li>
-        </ul>
-
-        <div class="tab" id="tab-one" aria-hidden="false">
-          <p>We managed to rectify it, though, because it now says, by adapting it, "Cook" where it once said "Cock", and it says "Pass" now where it once said "Piss", so it’s slightly less rude.</p>
-        </div>
-
-        <div class="tab" id="tab-two" aria-hidden="true">
-          <p>Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that's my decision. Use the sausage as a breakwater...but that's nitpicking, on the whole a very good effort...Seven on ten. Let's make love.</p>
-        </div>
-
-      </section>
-
-      <section class="video">
-
-        <header class="section-header">
-          <h1>Video</h1>
-        </header>
-
-        <h2>Vimeo</h2>
-
-        <div class="video-frame">
-          <iframe src="https://player.vimeo.com/video/123716203" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-
-        <h2>YouTube</h2>
-
-        <div class="video-frame">
-          <iframe src="https://www.youtube.com/embed/zUNrUqMwUkY" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-
-        <h2>Video Tag</h2>
-
-        <div class="video-frame">
-          <video controls muted src="https://interactive-examples.mdn.mozilla.net/media/examples/stream_of_water.webm" width="300" height="200" type="video/webm">
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-        </div>
-
-      </section>
-
-    <section class="the-grid">
+    <section class="typography-and-brand group">
       <header class="section-header">
-        <h1>The Grid</h1>
+        <h1>Typography and Branding</h1>
       </header>
 
-      <section class="grid group">
-        <div class="column-full"></div>
-      </section>
+      <article class="brand colours group">
+        <h2>Colours</h2>
+        <ul>
+          <li class="primary">Brand Primary</li>
+          <li class="secondary">Brand Secondary</li>
+          <li class="tertiary">Brand Tertiary</li>
+          <li class="error">Brand Error</li>
+          <li class="hightlight">Brand Focus</li>
+        </ul>
+      </article>
 
-      <section class="grid group">
-        <div class="column-half"></div>
-        <div class="column-half"></div>
-      </section>
+      <article class="typography sans">
+        <h2>Sans Typeface</h2>
+        <p>Aa Bb Cc Dd Ee Fe Gg Hh Ii Jj Kk Ll Mn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+        <p>0 1 2 3 4 5 6 7 8 9</p>
+        <p>:// @ _ - "" '' ! ? ~ % &amp; () []</p>
+      </article>
 
-      <section class="grid group">
-        <div class="column-third"></div>
-        <div class="column-third"></div>
-        <div class="column-third"></div>
-      </section>
+      <article class="typography serif">
+        <h2>Serif Typeface</h2>
+        <p>Aa Bb Cc Dd Ee Fe Gg Hh Ii Jj Kk Ll Mn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+        <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+        <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+        <p>0 1 2 3 4 5 6 7 8 9</p>
+        <p>:// @ _ - "" '' ! ? ~ % &amp; () []</p>
+      </article>
 
-      <section class="grid group">
-        <div class="column-two-thirds"></div>
-        <div class="column-third"></div>
-      </section>
+    </section>
 
-      <section class="grid group">
-        <div class="column-quarter"></div>
-        <div class="column-quarter"></div>
-        <div class="column-quarter"></div>
-        <div class="column-quarter"></div>
-      </section>
+    <section class="content">
+      <header class="section-header">
+        <h1>Content</h1>
+      </header>
 
-      <section class="grid group">
-        <div class="column-quarter"></div>
-        <div class="column-three-quarters"></div>
-      </section>
+      <article class="rich-text">
+        <h1>Heading Level 1</h1>
+        <h2>Heading Level 2</h2>
+        <h3>Heading Level 3</h3>
+        <h4>Heading Level 4</h4>
+        <h5>Heading Level 5</h5>
+        <h6>Heading Level 6</h6>
 
-      <section class="grid group">
-        <div class="column-fifth"></div>
-        <div class="column-fifth"></div>
-        <div class="column-fifth"></div>
-        <div class="column-fifth"></div>
-        <div class="column-fifth"></div>
-      </section>
+        <p>I know lying is wrong, but if the <b>elephant man</b> came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he's depressed and has respiratory problems — would you say "go and take that <del>lipstick</del> <ins>blusher</ins> off you mis-shapen headed elephant tranny"? No. You'd say "You look nice...John"</p>
 
-      <section class="grid group">
-        <div class="column-two-fifths"></div>
-        <div class="column-three-fifths"></div>
-      </section>
+        <p>A detective series for the <abbr title="British Broadcasting Corporation">BBC</abbr> based in Norwich called "Swallow". Swallow is a detective who tackles vandalism. Bit of a maverick, not afraid to break the law if he thinks it's necessary. He's not a criminal, you know, but he will, perhaps, travel 80mph on the motorway if, for example, he wants to get somewhere quickly...Think about it. No one had heard of Oxford before Inspector Morse.</p>
 
-      <section class="grid group">
-        <div class="column-fifth"></div>
-        <div class="column-four-fifths"></div>
-      </section>
+        <blockquote>
+          <p>He's not a criminal, but he will, perhaps, travel 80mph on the motorway if he, for example, he wants to get somewhere quickly...</p>
+          <cite>Alan Partridge</cite>
+        </blockquote>
+
+        <ul>
+          <li>Tom</li>
+          <li>Dick
+            <ul>
+              <li>Richard</li>
+              <li>Rich</li>
+              <li>Richie</li>
+            </ul>
+          </li>
+          <li><a href="#">Harry</a></li>
+        </ul>
+
+        <ol>
+          <li>Tom</li>
+          <li>Dick
+            <ol>
+              <li>Richard</li>
+              <li>Rich</li>
+              <li>Richie</li>
+            </ol>
+          </li>
+          <li>Harry</li>
+        </ol>
+
+        <hr>
+
+        <details>
+          <summary>I’m 47, my girlfriend's 33; she's 14 years younger than me. </summary>
+          Back of the net!
+        </details>
+
+        <h1>Temperature</h1>
+        <p>The temperature inside this apple pie is over one <u>thousand degrees</u>. If I squeeze it, a jet of molten bramley apple will squirt out. Could go your way; could go mine. Either way, one of us is going down.</p>
+
+        <h2>Oooh scary</h2>
+        <p>Oooh scary Irish men. Would you like to recruit me? I like your berets. They're worn by Saddam Hussain, Frank Spencer, the French.</p>
+
+        <h3>Minor criticism</h3>
+        <p>Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that's my decision. Use the sausage as a breakwater....but that's nitpicking, on the whole a very good effort...Seven on ten. Let's make love.</p>
+
+        <h4>Go to London</h4>
+        <p>Go to London, I guarantee you'll either be mugged or not appreciated. Catch the train to London, stopping at Rejection, <strong>Disappointment</strong>, Backstabbing Central and Shattered Dreams Parkway.</p>
+
+        <h5>Lying</h5>
+        <p>I know lying is wrong, but if the <a href="#">elephant man</a> came in now in a blouse with some make up on, and said 'How do I look?' Would you say, bearing in mind he's depressed and has respiratory problems, would you say 'Go and take that blusher off you mis-shapened elephant tranny'? No. You'd say 'You look nice... John'.</p>
+
+        <h6>Quick tip</h6>
+        <p>Quick tip for yourself. If you're ever doing an after-dinner speech, you say 'My Lords, Ladies and Gentlemen, sorry I'm late, <i>I just popped to the toilet</i>. And while I was there, I saw some graffiti and it said 'I used to be indecisive, but now I'm not so sure.' Straight away you've got them by the jaffas.</p>
+
+      </article>
+
+    </section>
+
+    <section>
+      <header class="section-header">
+        <h1>Images</h1>
+      </header>
+
+      <figure>
+        <img srcset="static/images/placeholder-square-400w.png 480w" sizes="(max-width: 480px) 440px" src="static/images/placeholder-square-800w.png" alt="Placeholder image">
+        <figcaption>
+          <p>Just a placeholder image</p>
+        </figcaption>
+      </figure>
+
+      <picture>
+        <source srcset="static/images/placeholder-square-400w.png"
+        media="(max-width: 480px) 440px">
+        <img src="static/images/placeholder-square-800w.png">
+      </picture>
+    </section>
+
+    <section class="content group">
+
+      <header class="section-header">
+        <h1>Content with a sidebar</h1>
+      </header>
+
+      <article class="main-content rich-text">
+        <h2>Elephant Man</h2>
+        <p>I know lying is wrong, but if the elephant man came in now in a blouse with some make up on, and said "how do I look?" Would you say — bearing in mind he's depressed and has respiratory problems — would you say "go and take that blusher off you mis-shapen headed elephant tranny"? No. You'd say "You look nice...John"</p>
+
+        <h3>Minor criticism</h3>
+        <p>Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that's my decision. Use the sausage as a breakwater...but that's nitpicking, on the whole a very good effort...Seven on ten. Let's make love.</p>
+      </article>
+
+      <aside class="sidebar" role="complementary">
+        <h3>Sidebar</h3>
+        <ul>
+          <li><a href="#">Complementary Link 1</a></li>
+          <li><a href="#">Complementary Link 2</a></li>
+          <li><a href="#">Complementary Link 3</a></li>
+          <li><a href="#">Complementary Link 4</a></li>
+        </ul>
+      </aside>
+
+    </section>
+
+    <section class="tablular-data">
+
+      <header class="section-header">
+        <h1>Tabular Data</h1>
+      </header>
+
+      <table>
+        <caption>The Best Victoria Sponge</caption>
+        <colgroup>
+          <col style=""></col>
+          <col style=""></col>
+          <col style=""></col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Ingredients</th><th scope="col">Serves Four</th><th scope="col">Serves More</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Caster Sugar</td><td>200g</td><td>400g</td>
+          </tr>
+          <tr>
+            <td>Softened Butter</td><td>200g</td><td>400g</td>
+          </tr>
+          <tr>
+            <td>Eggs - Beaten</td><td>4</td><td>8</td>
+          </tr>
+          <tr>
+            <td>Self-raising Flour</td><td>200g</td><td>400g</td>
+          </tr>
+          <tr>
+            <td>Baking Powder</td><td>1 <abbr title="Tea Spoon">tsp</abbr></td><td>2 tsp</td>
+          </tr>
+          <tr>
+            <td>Milk</td><td>2 tbsp</td><td>4 tbsp</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+    <section class="forms">
+
+      <header class="section-header">
+        <h1>Forms</h1>
+        <!-- note that we're not using placeholder attributes since they aren't especially accessible -->
+      </header>
+
+      <form class="data-collection" action="">
+        <div class="form-group">
+          <label for="text-input">Label for text <span class="required">Required</span>
+            <em class="hint">Hint text for the input below</em>
+          </label>
+          <input type="text" name="text-input" required>
+        </div>
+
+        <div class="form-group form-error">
+          <label for="text-input">Label for error <span class="error-msg">This is required</span></label>
+          <input type="text" name="text-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="search-input">Label for search</label>
+          <input type="search" name="search-input">
+        </div>
+
+        <div class="form-group">
+          <label for="tel-input">Label for telephone</label>
+          <input type="tel" name="tel-input" placeholder="0208-123-1234" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+        </div>
+
+        <div class="form-group">
+          <label for="email-input">Label for Email</label>
+          <input type="email" name="email-input" autocapitalize="none">
+        </div>
+
+        <div class="form-group">
+          <label for="password-input">Label for password</label>
+          <input type="password" name="password-input" autocapitalize="none">
+        </div>
+
+        <div class="form-group">
+          <label for="url-input">Label for URL</label>
+          <input type="url" name="url-input">
+        </div>
+
+        <div class="form-group">
+          <label for="color-input">Label for color</label>
+          <input type="color" name="color-input" value="#ff0000">
+        </div>
+
+        <div class="form-group">
+          <label for="range-input">Label for range</label>
+          <input type="range" name="range-input" min="0" max="100" value="50">
+        </div>
+
+        <div class="form-group">
+          <label for="number-input">Label for number</label>
+          <input type="number" name="number-input">
+        </div>
+
+        <div class="form-group">
+          <label for="time-input">Label for time</label>
+          <input type="time" name="time-input">
+        </div>
+
+        <div class="form-group">
+          <label for="date-input">Label for date</label>
+          <input type="date" name="date-input">
+        </div>
+
+        <div class="form-group">
+          <label for="datetime-local-input">Label for datetime local</label>
+          <input type="datetime-local" name="datetime-local-input">
+        </div>
+
+        <div class="form-group">
+          <label for="week-input">Label for week</label>
+          <input type="week" name="week-input">
+        </div>
+
+        <div class="form-group">
+          <label for="month-input">Label for month</label>
+          <input type="month" name="month-input">
+        </div>
+
+        <div class="form-group">
+          <label for="file-input">Label for file</label>
+          <input type="file" name="file-input">
+        </div>
+
+        <div class="form-group">
+          <label for="textarea">Label for textarea</label>
+          <textarea type="textarea" rows="10" cols="80"></textarea>
+        </div>
+
+        <!-- Remember that radios and checkboxes probably need a legend element for context, so use a fieldset inside the containing "form-group" element -->
+
+        <div class="form-group">
+          <fieldset class="inline-labels">
+            <legend>Do you live here?</legend>
+            <label for="radio-one" class="radio-group" role="radio">
+              <input type="radio" id="radio-one" name="radio-inline-group" value="Yes">
+              Yes
+            </label>
+            <label for="radio-two" class="radio-group" role="radio">
+              <input type="radio" id="radio-two" name="radio-inline-group" value="No">
+              No
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <fieldset class="block-labels">
+            <legend>Pick one type of sweet treat</legend>
+            <label for="radio-brownies" class="radio-group" role="radio">
+              <input type="radio" id="radio-brownies" name="radio-block-group" value="Brownie">
+              Peanut butter and dark chocolate brownies
+            </label>
+            <label for="radio-flapjacks" class="radio-group" role="radio">
+              <input type="radio" id="radio-flapjacks" name="radio-block-group" value="flapjack">
+              Sultana and nut flapjacks
+            </label>
+            <label for="radio-fingers" class="radio-group" role="radio">
+              <input type="radio" id="radio-fingers" name="radio-block-group" value="sponge">
+              Sponge fingers
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <fieldset class="inline-labels">
+            <legend>Cake or tea or both?</legend>
+            <label for="checkbox-one" class="checkbox-group">
+              <input type="checkbox" id="checkbox-one" name="checkbox-inline-group" value="I like cake">
+              I like cake
+            </label>
+            <label for="checkbox-two" class="checkbox-group">
+              <input type="checkbox" id="checkbox-two" name="checkbox-inline-group" value="I like tea">
+              I like tea
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <fieldset class="block-labels">
+            <legend>Favourite thing to do on a Sunday?</legend>
+            <label for="checkbox-walks" class="checkbox-group">
+              <input type="checkbox" id="checkbox-walks" name="checkbox-block-group" value="I like long walks in the country">
+              I like long walks in the country
+            </label>
+            <label for="checkbox-fire" class="checkbox-group">
+              <input type="checkbox" id="checkbox-fire" name="checkbox-block-group" value="I like a cosy pub with a roaring log fire">
+              I like a cosy pub with a roaring log fire
+            </label>
+            <label for="checkbox-roast" class="checkbox-group">
+              <input type="checkbox" id="checkbox-roast" name="checkbox-block-group" value="I like a roast dinner with all the trimmings and a pint of IPA">
+              I like a roast dinner with all the trimmings and a pint of IPA
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-buttons">
+          <input type="submit" value="Submit" class="button button-submit">
+          <input type="reset" value="Reset" class="button button-reset">
+          <input type="button" value="Button (Disabled)" class="button button-disabled" disabled="disabled">
+          <button class="button">Button</button>
+        </div>
+      </form>
+
+    </section>
+
+    <section class="tabs">
+
+      <header class="section-header">
+        <h1>Tabs</h1>
+      </header>
+
+      <ul>
+        <li><a href="#tab-one" aria-controls="tab-one" aria-expanded="true">Tab One</a></li>
+        <li><a href="#tab-two" aria-controls="tab-two" aria-expanded="false">Tab Two</a></li>
+      </ul>
+
+      <div class="tab" id="tab-one" aria-hidden="false">
+        <p>We managed to rectify it, though, because it now says, by adapting it, "Cook" where it once said "Cock", and it says "Pass" now where it once said "Piss", so it’s slightly less rude.</p>
+      </div>
+
+      <div class="tab" id="tab-two" aria-hidden="true">
+        <p>Minor criticism. I like to keep a bit more distance between the egg and the beans. I may want to mix them but that's my decision. Use the sausage as a breakwater...but that's nitpicking, on the whole a very good effort...Seven on ten. Let's make love.</p>
+      </div>
+
+    </section>
+
+    <section class="video">
+
+      <header class="section-header">
+        <h1>Video</h1>
+      </header>
+
+      <h2>Vimeo</h2>
+
+      <div class="video-frame">
+        <iframe src="https://player.vimeo.com/video/123716203" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+
+      <h2>YouTube</h2>
+
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/zUNrUqMwUkY" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+
+      <h2>Video Tag</h2>
+
+      <div class="video-frame">
+        <video controls muted src="https://interactive-examples.mdn.mozilla.net/media/examples/stream_of_water.webm" width="300" height="200" type="video/webm">
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
 
     </section>
 
@@ -627,8 +565,8 @@
   <footer class="footer group" role="contentinfo"></footer>
 
 </body>
-<script src="static/jquery.slim.min.js" async></script>
-<script src="static/main.min.js" async></script>
+<script src="static/jquery.min.js"></script>
+<script src="static/main.min.js"></script>
 
 <noscript>JavaScript is disabled</noscript>
 
