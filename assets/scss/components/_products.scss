@@ -1,0 +1,13 @@
+.products {
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: $spacer2;
+  }
+
+  img {
+    @include image;
+  }
+
+}

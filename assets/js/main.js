@@ -1,9 +1,42 @@
-/* globals jQuery, Modernizr */
+/* globals jQuery, barba, anime, gsap */
 'use strict'
+
+const main = document.querySelector('main')
+
+barba.init({
+  debug: true,
+  transitions: [{
+    name: 'opacity-transition',
+    leave (data) {
+      return gsap.to(data.current.container, {
+        opacity: 0
+      })
+      // return anime({
+      //   targets: main,
+      //   opacity: 0.5,
+      //   loop: true,
+      //   easing: 'linear',
+      //   duration: 5000
+      // })
+    },
+    enter (data) {
+      return gsap.from(data.next.container, {
+        opacity: 0
+      })
+      // return anime({
+      //   targets: main,
+      //   opacity: 0.5,
+      //   loop: true,
+      //   easing: 'linear',
+      //   duration: 5000
+      // })
+    }
+  }]
+})
 
 jQuery(function ($) {
   // Navigation
-  const $navHandler = $('.site-nav--trigger')
+  const $navHandler = $('.main-nav--trigger')
   const $subnavHandler = $('.nav-subnav--handler')
 
   const bodyOpenClasses = [
@@ -77,24 +110,6 @@ jQuery(function ($) {
   tabs()
   a11y()
 })
-
-// Vanila JS Functions
-
-// Product pages
-// function movePhotos () {
-//   const photos = document.querySelector('.product-photos')
-//   const title = document.querySelector('.product-title')
-//   const desc = document.querySelector('.product-description')
-//
-//   if (Modernizr.mq(mqSmall)) {
-//     title.insertAdjacentElement('afterend', photos)
-//   } else if (Modernizr.mq(mqBig)) {
-//     desc.insertAdjacentElement('afterend', photos)
-//   }
-// }
-//
-// window.onresize = movePhotos()
-// movePhotos()
 
 // Add loaded class once everything has loaded
 document.addEventListener('DOMContentLoaded', (event) => {
