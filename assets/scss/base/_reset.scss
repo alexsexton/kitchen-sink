@@ -1,56 +1,70 @@
-html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, address, del, em, img, q, small, strike, strong, sub, sup, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, main, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-main, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
 body {
-    line-height: 1;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
-ol, ul {
-    list-style: none;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
-blockquote, q {
-    quotes: none;
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none;
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-// This is ugly and not an efficent way of doing box-sizing and needs changing
-* {
-  -moz-box-sizing:border-box;
-  -webkit-boxizing:border-box;
-  box-sizing:border-box;
-}
-
-.group:before,
-.group:after {
-    content: " ";
-    display: table;
-}
-
-.group:after {
-    clear: both;
-}
-
-// For IE 6/7 only Include this rule to trigger hasLayout and contain floats.
-.group {
-    *zoom: 1;
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
