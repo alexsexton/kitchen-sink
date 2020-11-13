@@ -148,8 +148,8 @@
   cursor: pointer;
   color: $white;
   position: absolute;
-  top: $margin;
-  right: $margin;
+  top: $spacer;
+  right: $spacer;
 }
 
 @mixin font-size($sizeValue: 1.6) {

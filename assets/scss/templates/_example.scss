@@ -25,12 +25,11 @@
 }
 // Section Headers
 .section-header {
-  border-bottom: 5px solid scale-color($border-colour, $lightness: 50%);
-  margin: $margin * 3 0 $margin;
+  margin: $spacer3 0 $spacer;
 }
 
 .section-header h1 {
-  margin: $margin 0;
+  margin: $spacer 0;
 }
 // Typography and brand
 .typography-and-brand {
