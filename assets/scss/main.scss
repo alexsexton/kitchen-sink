@@ -3,6 +3,7 @@
 @import "settings/colours";
 @import "settings/global";
 @import "settings/mixins";
+@import "settings/grid";
 
 @import "base/reset";
 @import "base/typography";
@@ -23,5 +24,3 @@
 @import "templates/home";
 @import "templates/pages";
 @import "templates/blog";
-
-@import "base/ie";
