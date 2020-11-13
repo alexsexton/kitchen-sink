@@ -87,10 +87,11 @@ gulp.task('babel', function (done) {
 
 // JavaScript processing
 gulp.task('js', gulp.series('babel', function () {
+  // Multiple files need to go in an array
   var jsbuild = gulp.src([
     folder.src + 'js/lib/*',
     folder.src + 'js/main.js'
-  ]) // <- Multiple files need to go in an array
+  ])
     .pipe(babel())
     .pipe(concat('main.min.js'))
 
