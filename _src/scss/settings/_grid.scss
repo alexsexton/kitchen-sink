@@ -3,8 +3,10 @@ $grid-measure-px: 105px;
 $grid-gap: 36px;
 $grid-max-width: 1656px;
 
-$grid-measure: percentage($grid-measure-px / $site-max-width);
-$grid-gutter: percentage($grid-gap / $site-max-width);
+$gm : div(105, 1656);
+$gg : div(36, 1656);
+$grid-measure: percentage($gm);
+$grid-gutter: percentage($gg);
 
 // Magic! Use like this: flex: 0 0 grid-width(8);
 @function grid-width($n) {

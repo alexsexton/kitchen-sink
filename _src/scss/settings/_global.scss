@@ -3,8 +3,8 @@ $imagePath: "/images";
 $fontPath: "/fonts";
 
 // Spacers
-$spacer: 1rem;
-$halfspacer: $spacer / 2;
+$spacer: 10px;
+$halfspacer: 5px;
 $spacer2: $spacer * 2;
 $spacer3: $spacer * 3;
 $spacer4: $spacer * 4;
@@ -74,6 +74,7 @@ $font-family-sans: $system-font-family-sans;
 $font-family-serif: "Georgia", Times, Serif;
 $base-sans: $font-family-sans;
 $base-font-size: 16px;
+$detail-font-size: 14px;
 $base-line-height: 1.4;
 $header-line-height: 1.2;
 $footer-font-size: 14px;

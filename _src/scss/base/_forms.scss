@@ -112,7 +112,7 @@ textarea:focus {
   font-style: italic;
   display: block;
   color: scale-color($base-font-colour, $lightness: 50%);
-  font-size: $base-font-size/1.618;
+  font-size: $detail-font-size;
 }
 
 .form-group, .form-buttons {
@@ -121,7 +121,7 @@ textarea:focus {
 }
 
 .form-group .required {
-  font-size: $base-font-size/1.618;
+  font-size: $detail-font-size;
 }
 
 .form-error {
