@@ -1,6 +1,6 @@
 {
-  "name": "linea-digital-webpack-config",
-  "version": "1.0.3",
+  "name": "kitchen-sink-webpack-config",
+  "version": "1.0.1",
   "description": "A webpack starter kit",
   "main": "index.js",
   "private": true,
@@ -29,7 +29,6 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "modern-css-reset": "^1.4.0",
-    "tiny-slider": "^2.9.4"
+    "modern-css-reset": "^1.4.0"
   }
 }

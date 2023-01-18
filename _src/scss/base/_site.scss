@@ -1,25 +1,12 @@
 // Site
 
 html {
-  background: $body-background;
 }
 
 body {
-  font-family: $base-sans;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  color: $base-font-colour;
+  font-family: var(--ks-font-family-sans);
+  margin: var(--ks-space-xxl);
 }
 
 main {
-  margin: auto;
-  padding: 0 $spacer2;
-}
-
-.group {
-  @include group;
-}
-
-.hide {
-  @include hide;
 }

@@ -20,13 +20,13 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
 /* Set core root defaults */
-html {
+html:focus-within {
   scroll-behavior: smooth;
 }
 
@@ -59,6 +59,9 @@ select {
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
   *,
   *::before,
   *::after {

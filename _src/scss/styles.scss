@@ -1,27 +1,21 @@
 // Main CSS
 
 @import 'settings/tokens';
-@import 'settings/colours';
+@import 'settings/colors';
 @import 'settings/global';
 @import 'settings/mixins';
-@import 'settings/grid';
 
 @import 'base/reset';
+@import 'base/site';
 @import 'base/typography';
 @import 'base/forms';
 @import 'base/nav';
 @import 'base/header';
 @import 'base/footer';
-@import 'base/site';
-@import 'base/sidebar';
 
+@import 'components/sidebar';
 @import 'components/images';
 @import 'components/tabs';
 @import 'components/tables';
-@import 'components/products';
 
 @import 'templates/example';
-
-@import 'templates/home';
-@import 'templates/pages';
-@import 'templates/blog';

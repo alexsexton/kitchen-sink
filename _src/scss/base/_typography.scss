@@ -1,117 +1,88 @@
 // Typography
 
-$heading-margin: 1rem;
-$flowing-text-margin: 1rem;
-
 // Headings
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  margin: $heading-margin 0 $heading-margin 0;
+.typography.mono {
+  font-family: var(--ks-font-family-mono);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 }
 
 h1 {
-  font-size: #{$base-font-size * 2.5};
 }
 
 h2 {
-  font-size: #{$base-font-size * 2};
 }
 
 h3 {
-  font-size: #{$base-font-size * 1.5};
 }
 
 h4 {
-  font-size: #{$base-font-size * 1.25};
 }
 
 h5 {
-  font-size: $base-font-size;
-  text-transform: uppercase;
 }
 
 h6 {
-  font-size: $base-font-size;
 }
 
 .rich-text {
-
   p {
-    margin: 0 0 $flowing-text-margin 0;
-    max-width: 40em;
-    -webkit-font-variant-ligatures: discretionary-ligatures;
   }
 
   ul {
-    margin: 0 0 $flowing-text-margin $flowing-text-margin;
     li {
-      list-style-type: disc;
       ul {
-        margin: 0 0 0 $flowing-text-margin;
         li {
-          list-style-type: circle;
         }
       }
     }
   }
 
   ol {
-    margin: 0 0 $flowing-text-margin $flowing-text-margin;
     li {
-      list-style-type: decimal;
       ol {
-        margin: 0 0 0 $flowing-text-margin;
         li {
-          list-style-type: lower-latin;
         }
       }
     }
   }
 
   blockquote {
-    padding: 0 0 0 $flowing-text-margin;
-    margin: 0 0 $flowing-text-margin 0;
-    max-width: 40em;
-    border-left: 4px solid scale-color($base-font-colour, $lightness: 50%);
-
     cite:before {
-      content: "\2014\00a0";
     }
 
     cite {
-      font-family: $font-family-serif;
     }
   }
 
-  abbr {}
+  abbr {
+  }
 
-  hr { }
+  hr {
+  }
 
-  hr:after { }
+  hr:after {
+  }
 
   a {
-    color: $link-colour;
-    text-decoration: none;
   }
 
   a:hover {
-    color: $link-hover-colour;
   }
 
   a:visited {
-    color: $link-colour;
   }
 
   a:active {
-    color: $black;
-    background: $highlight;
   }
 
-  a:focus { }
-
-}
-
-.section-header {
-
+  a:focus {
+  }
 }

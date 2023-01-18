@@ -1,21 +1,13 @@
-
 // Header
 
 .header {
-  padding: $spacer $spacer2;
-  background: $light-grey;
-
   .logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: auto;
   }
 
   .search-form {
-    display: flex;
-
     .button {
-      margin: 0;
     }
   }
-
 }
