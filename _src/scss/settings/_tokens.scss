@@ -1,21 +1,31 @@
 :root {
+  // Colors
   --ks-color-black: #000;
+  --ks-color-white: #fff;
   --ks-color-grey-100: #efefef;
   --ks-color-red: #b94d37;
+  // Spacing
   --ks-space-s: 8px;
   --ks-space-m: 16px;
   --ks-space-l: 24px;
   --ks-space-xl: 36px;
   --ks-space-xxl: 72px;
+  // Borders and radii
   --ks-border-radius-s: 3px;
   --ks-border-radius: 7px;
+  // Inputs, Forms and Buttons
   --ks-form-padding: 5px;
   --ks-form-border-width: 2px;
-  --ks-form-border-color: #000;
-  --ks-form-border-focus-color: #b94d37;
-  --ks-form-background-color: #efefef;
-  --ks-font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --ks-font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
-    monospace;
+  --ks-form-border-color: var(--ks-color-black);
+  --ks-form-border-focus-color: var(--ks-color-red);
+  --ks-form-background-color: var(--ks-color-grey-100);
+  // Typography
+  --ks-font-family-sans: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  --ks-font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo,
+    Courier, monospace;
+  // Box Shadows
+  --ks-box-shadow-card: 0 0 15px rgba(12, 12, 12, 0.15),
+    0 1px 4px rgba(12, 12, 12, 0.15);
 }

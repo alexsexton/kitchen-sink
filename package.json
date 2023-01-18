@@ -30,5 +30,9 @@
   },
   "dependencies": {
     "modern-css-reset": "^1.4.0"
+  },
+  "prettier": {
+    "proseWrap": "never",
+    "singleQuote": true
   }
 }

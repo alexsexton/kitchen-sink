@@ -1,0 +1,11 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+  gap: var(--ks-space-l);
+}
+
+.component-card {
+  box-shadow: var(--ks-box-shadow-card);
+  background-color: var(--ks-color-white);
+  padding: var(--ks-space-m);
+}

@@ -62,6 +62,18 @@ input[type='submit'] {
 
 // Labels
 
+label {
+  display: block;
+  margin-bottom: var(--ks-space-s);
+}
+
+legend {
+}
+
+fieldset {
+  border-color: var(--ks-form-border-focus-color);
+}
+
 .data-collection {
 }
 

@@ -9,4 +9,13 @@ body {
 }
 
 main {
+  display: flex;
+  flex-flow: column;
+  gap: var(--ks-space-xxl);
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  gap: var(--ks-space-xl);
 }
